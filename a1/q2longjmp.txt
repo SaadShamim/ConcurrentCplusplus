@@ -1,0 +1,25 @@
+longjmp no optimization:
+real	0m0.382s
+user	0m0.380s
+sys	0m0.000s
+
+longjmp with optimization:
+eal	0m0.336s
+user	0m0.330s
+sys	0m0.000s
+
+throwcatch no optimization:
+real	1m11.073s
+user	1m10.890s
+sys	0m0.170s
+
+throwcatch with optimization:
+real	0m59.765s
+user	0m59.750s
+sys	0m0.010s
+
+without optimization:
+There was a significant difference in performance between the two programs, longjmp and throwcatch. I suspect the reason for this occurrence is because setjmp is saving your sate (registers) and then reverting back the previous state, this is far faster because when you throw and catch, you have to call the destructor and unwind the stack; removing a large number of frames from the stack increases time, and hence is the reason with throwcatch is slower then setjmp/longjmp.
+
+with optimization:
+There is a slight difference, with optimization as the gcc compiler uses most of the supported optimizations when compiling.

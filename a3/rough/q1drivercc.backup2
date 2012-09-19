@@ -1,0 +1,91 @@
+#include <uC++.h>
+#include <iostream>
+#include <fstream>
+#include <sstream>
+using namespace std;					// direct access to std
+#include <cstdlib>
+#include <vector>
+
+#include "q1buffer.h"
+
+
+
+void uMain::main() {
+
+	//variable decleration
+	int Cons = 5;
+	int Prods = 3;
+	int Produce = 10;
+	int BufferSize=10;
+	int Delay = Cons+Prods;
+	int sum=0;
+
+	vector<Producer*> allProducers;
+	vector<Consumer*> allConsumers;
+	
+	//input files
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	//create a boundedbuffer
+	BoundedBuffer<int> b1(BufferSize);
+
+	for(int i=0; i<Prods; i++){
+		Producer *p1 = new Producer(b1, Produce, Delay);
+		allProducers.push_back(p1);
+	}
+	
+	cerr << "producers created" << endl;
+	cerr << "producers size: " << allProducers.size() << endl;
+		
+	for(int i=0; i<Cons; i++){
+		Consumer *c1 = new Consumer(b1,Delay,-1,sum);
+		allConsumers.push_back(c1);
+	}
+	
+	cerr << "consumers created" << endl;
+
+	for(int i=0; i<Prods; i++){
+		cerr << i << endl;
+		delete allProducers.at(0);
+		allProducers.erase(allProducers.begin());
+		cerr << "producers size: " << allProducers.size() << endl;
+		cerr << " deleted prod: " << i << endl;
+	}
+	
+	cerr << "producers done" << endl;
+
+	for(int i=0; i<Cons; i++){
+		b1.insert(-1);
+	}
+	
+	cerr << "sentinel added" << endl;
+	
+	for(int i=0; i<Cons; i++){
+		cerr << "deleting consumer: " << i << endl;
+		delete allConsumers.at(0);
+		allConsumers.erase(allConsumers.begin());
+	}
+	
+	cerr << "consumers done" << endl;
+
+	cout << sum << endl;
+
+}

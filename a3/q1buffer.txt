@@ -1,0 +1,60 @@
+//I'm including all times for my future reference, but have analyzed and answered questions based on user time.
+
+BUSY
+$ time ./boundedBuffer 50 55 50000 30 10
+total: 31898264
+
+real	0m8.415s
+user	0m8.380s
+sys	0m0.030s
+
+NOBUSY
+$ time ./boundedBuffer 50 55 50000 30 10
+total: 31898264
+
+real	0m11.784s
+user	0m11.760s
+sys	0m0.020s
+
+BUSY -O2
+$ time ./boundedBuffer 50 55 50000 30 10
+total: 31898264
+
+real	0m8.126s
+user	0m8.120s
+sys	0m0.000s
+
+NOBUSY -O2
+$ time ./boundedBuffer 50 55 50000 30 10
+total: 31898264
+
+real	0m8.126s
+user	0m8.120s
+sys	0m0.000s
+
+ii.  For non optimized busy wiaitng is faster
+	 For optimized, no major differences
+	 
+iii. Busy waiting is faster without o2 optimization because we are increasing the amount of context switching, 
+o2 optimization using compiler magic optimizes for them (by preevaluating certain dependencies).Therefore, no big difference with o2 optimization
+
+
+v.(MC)
+time ./boundedBuffer 50 55 50000 30 10
+total: 31682860
+
+real	0m41.947s
+user	2m47.860s
+sys	0m0.270s
+
+(SEM)
+$ time ./boundedBuffer 50 55 50000 30 10
+total: 31621608
+
+real	0m59.677s
+user	3m58.200s
+sys	0m0.990s
+
+ 
+both outputs were much slower with multprocessors
+The reason for the slower speeds may have been the fact that we are creating more threads then are processors avaiable

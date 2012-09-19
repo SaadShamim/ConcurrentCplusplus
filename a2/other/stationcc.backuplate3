@@ -1,0 +1,275 @@
+#include "station.h"
+#include <vector>
+#include <iostream>
+#include "PRNG.h"
+
+vector<Station *> Station::active;
+unsigned int Station::value;
+Station* Station::coordinator;
+
+extern PRNG myPrng;
+
+///MAKE VALUE GLOBAl
+//iFailed to failed()
+//remove starterFlag
+
+///MAKE VALUE GLOBAl
+//iFailed to failed()
+//remove starterFlag
+//change enum
+//55 179 977
+
+
+// 89 sends 23
+// ./tokenring 18 11 32 > me.out
+//transmit in one place
+
+void Station::main() {
+	holdCounter = myPrng(1);
+	suspend();
+	Station *This = this;
+	
+	try {
+		
+		_Enable {   
+			// allow delivery of nonlocal exceptions
+			// establish starter for termination
+			
+			// _Enable
+			while(true){
+				
+				while(myPartner->failed()){
+					cout << idx << "(fail " << myPartner->idx << ", part " << (myPartner->partner())->id() << ") "; 
+					
+					
+					if(myPartner->idx == coordinator->idx){
+						cout << idx << "(elec";
+						starterFlag = idx; //erase later, check ur coordinator==partner instead
+						_Resume Election(*this) _At *(myPartner->partner());
+						myPartner->partner()->vote();
+					}
+					
+					if(localFrame.dstId == myPartner->idx){
+						if(localFrame.type == Frame::ACK){
+							//convert to token
+							cout << idx << "(drop Ack)" << endl;
+							localFrame.type = Frame::TOKEN;
+							localFrame.dstId = idx;
+						}else if (localFrame.type == Frame::NACK){
+							cout << idx << "(drop Nack)" << endl;
+							localFrame.type = Frame::TOKEN;
+							localFrame.dstId = idx;
+						} else if(localFrame.type == Frame::DF){
+							cout << idx << "(drop Data)";
+							if(localFrame.srcId == localFrame.dstId){
+								cout << endl;
+								//covert to token
+								localFrame.type = Frame::TOKEN;
+								localFrame.dstId = idx;
+							}else{
+								cout << " ";
+								//convert to nack
+								localFrame.type = Frame::NACK;
+								localFrame.dstId = localFrame.srcId;
+								localFrame.srcId = idx;
+							}
+							
+						}
+					} else if ( localFrame.dstId == idx && localFrame.srcId == myPartner->id()) {
+						if ( localFrame.type == Frame::DF ) {
+							cout << idx << "(rec " << value << ", from " << localFrame.srcId << ") "; 
+							cout << idx << "(drop Ack)" <<endl;
+							localFrame.type = Frame::TOKEN;
+							localFrame.dstId = idx;
+						}
+					}
+					
+					myPartner = coordinator->remove(myPartner);
+				}
+				
+				//generate failed random number
+				if(myPrng((failurex-1)) == 0){
+					iFailed = true;
+				}
+				
+				Frame tmpFrame;
+				if((localFrame.type==Frame::DF) && (localFrame.dstId == idx) && (check(localFrame.srcId) == false)){	
+					cout << idx << "(drop Ack)" << endl;
+					localFrame.type = Frame::TOKEN;
+					localFrame.dstId = idx;
+				}
+				
+				if(localFrame.type == Frame::TOKEN){
+					if(holdCounter == 0){
+						//reset counter
+						holdCounter = myPrng(1,3);
+						value++;
+						int dstIndex = myPrng((active.size()-1));
+						//create dataframe
+						tmpFrame.type = Frame::DF;
+						tmpFrame.value = value;
+						tmpFrame.srcId = idx;
+						tmpFrame.dstId =  active[dstIndex]->idx;
+						//send dataframe
+						cout << idx << "(send " << value << ", to " << active[dstIndex]->idx << ") ";
+	//					myPartner->transmit(tmpFrame);
+					}else{
+						cout << idx << "(skip) ";
+						holdCounter--;
+						tmpFrame.type = Frame::TOKEN;
+						tmpFrame.value = value;
+						tmpFrame.srcId = idx; //doesn't matter, never checked
+						tmpFrame.dstId = myPartner->idx; //doesn't matter never checked
+	//					myPartner->transmit(tmpFrame);
+					}	
+				} else if(localFrame.type == Frame::NACK || localFrame.type==Frame::ACK){
+					//cerr << "have NACK" << endl;
+					if(localFrame.dstId == idx){
+						tmpFrame.type = Frame::TOKEN;
+						tmpFrame.value = value;
+						tmpFrame.srcId = idx; 
+						tmpFrame.dstId = myPartner->idx; 
+						
+						if(localFrame.type == Frame::ACK){
+							cout << idx << "(ack)"<< endl;
+						}else{
+							cout << idx << "(nack)"<<endl;
+						}
+						
+						
+	//					myPartner->transmit(tmpFrame);
+					}else{
+						//pass frame
+						
+						if(localFrame.type == Frame::ACK){
+							cout << idx << "(ack " << localFrame.dstId << ") ";
+						}else{
+							cout << idx << "(nack " << localFrame.dstId << ") ";
+						}
+						
+						tmpFrame.type = localFrame.type;
+						tmpFrame.value = localFrame.value;
+						tmpFrame.srcId = localFrame.srcId; //doesn't matter, never checked
+						tmpFrame.dstId = localFrame.dstId; //doesn't matter never checked
+	//					myPartner->transmit(tmpFrame);
+					}
+				} else if(localFrame.type == Frame::DF){
+					if(localFrame.dstId == idx){
+						cout << idx << "(rec " << value << ", from " << localFrame.srcId << ") "; 
+						tmpFrame.type = Frame::ACK;
+						tmpFrame.value = value;
+						tmpFrame.srcId = idx; 
+						tmpFrame.dstId = localFrame.srcId; 
+	//					myPartner->transmit(tmpFrame);
+					}else{//pass on the data frame
+						cout << idx << "(for " <<  localFrame.dstId << ", " << value << ") "; 
+						tmpFrame.type = localFrame.type;
+						tmpFrame.value = localFrame.value;;
+						tmpFrame.srcId = localFrame.srcId; 
+						tmpFrame.dstId = localFrame.dstId; 
+	//					myPartner->transmit(tmpFrame);
+					}
+				}
+				
+				
+				myPartner->transmit(tmpFrame);
+				
+				if(myPartner->idx == idx){
+					break;
+				}
+				
+			}//end while
+			
+		} //close Enable
+	} _CatchResume(Election &election) (Station *This)    {
+		//deal with election
+		cout << " ";
+		if(This->partner() != Station::coordinator){
+			if(This->failed()){
+				cout << election.candidate.id() << ">" << This->id();
+				_Resume Election(election.candidate) _At *(This->partner());
+			}else if((election.candidate).id() > This->id()){
+				cout << election.candidate.id() << "?" << This->id();
+				_Resume Election(election.candidate) _At *(This->partner());	
+			}else{
+				cout << election.candidate.id() << "?" << This->id();
+				_Resume Election(*This) _At *(This->partner());
+			}
+			
+			(This->partner())->vote();
+		}else{
+			cout << "win " << election.candidate.id() << ") ";
+			(Station::coordinator) = &(election.candidate);
+			
+		}
+	} // try
+	
+	cout << "no more partners"<<endl;
+	return;
+}
+
+bool Station::check(int dst){
+	
+	for(int i=0;i<active.size();i++){
+		if(active[i]->id() == dst){
+			return true;
+		}
+	}
+	return false;
+}
+
+Station::Station(unsigned int id , unsigned int failure) : idx(id),failurex(failure){
+	active.push_back(this);
+	
+}
+
+unsigned int Station::id(){
+	return idx;
+}
+
+bool Station::failed(){
+	return iFailed;
+}
+
+void Station::transmit(const Frame &f){
+	localFrame.type = f.type;
+	localFrame.value = f.value;
+	localFrame.srcId = f.srcId;
+	localFrame.dstId = f.dstId;
+	//cerr << localFrame.type << endl;
+//	fFrameType = f.type;
+//	fValue = f.value;
+//	fsrcId = f.srcId;
+//	fdstId = f.dstId;
+	resume();
+}
+
+void Station::start(Station *partner){
+	iFailed = false;
+	myPartner = partner;
+	resume();
+}
+
+Station* Station::remove(Station *victim){
+	Station *newPartner;
+	for(unsigned int i=0; i<active.size(); i++){
+		if(active[i]->idx == victim->idx){
+			newPartner = active[i]->partner();
+			active.erase(active.begin()+i);
+			break;
+		}
+	}
+	delete victim;	
+	return newPartner; 
+}
+
+Station* Station::partner(){
+	return myPartner;
+}
+
+
+
+void Station::vote(){
+	resume();
+}
+

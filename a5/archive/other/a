@@ -1,0 +1,58 @@
+Failed with 4 20 2000
+2000
+Phil0	Phil1	Phil2	Phil3
+******	******	******	******
+H
+E2,18	H	H	H
+T			W3,0
+			E5,15
+	E4,16		T
+	T
+	H	E4,16
+H	W1,2
+E4,14		T	H
+T	E3,13		W3,0
+	T		E4,11
+		H	T
+H		E1,15
+E2,12		T
+T	H
+H	E1,12		H
+	T		E3,8
+E5,7			T
+T		H
+		E4,11
+		T
+H		H
+E1,6
+T
+H
+E4,2	H
+T		E2,9	H
+H		T	E1,7
+W0,1	E3,9
+E2,0	T	H	T
+F	...	...	...
+			H
+			E5,2
+		E5,4	T
+	H	T	H
+		H
+	W1,2	E1,3	W3,0
+	E3,6	T	E2,0
+...	...	...	F
+	T
+	H
+	E2,4
+	T	H
+		E2,1
+	H	T
+	E3,1
+	T	H
+		E1,0
+...	...	F	...
+	H
+	E1,0
+...	F	...	...
+***********************
+Philosophers terminated

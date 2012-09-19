@@ -1,0 +1,142 @@
+1) test with general ./vote for semaphore
+
+
+Voter0	Voter1	Voter2	Voter3	Voter4	Voter5	
+=======	=======	=======	=======	=======	=======	
+S	S	S	S	S	S
+	V 0				
+	B 1			V 0	
+V 1				B 2	
+C					
+F 0	...	...	...	...	...
+	U 1				
+...	F 0	...	...	...	...
+				U 0	
+...	...	...	...	F 0	...
+			V 0		
+		V 0	B 1		
+		B 2			V 0
+					C
+...	...	...	...	...	F 0
+			U 1		
+...	...	...	F 0	...	...
+		U 0			
+...	...	F 0	...	...	...
+=================
+All tours started
+
+spacing good, no indication of unalignment
+ordering of vote and finish, good with FIFO order
+
+2) Compare with prof
+
+$ ./vote_SEM_64 
+Voter0	Voter1	Voter2	Voter3	Voter4	Voter5
+=======	=======	=======	=======	=======	=======
+S	S	S	S	S	S
+		V 1
+	V 0	B 1
+	B 2			V 0
+				C
+...	...	...	...	F 0	...
+		U 1
+...	...	F 0	...	...	...
+	U 0
+...	F 0	...	...	...	...
+					V 0
+V 1					B 1
+B 2			V 0
+			C
+...	...	...	F 0	...	...
+					U 1
+...	...	...	...	...	F 0
+U 0
+F 0	...	...	...	...	...
+=================
+All tours started
+
+Alignement looks the same. Ordering is although different follow same general rule of FIFO
+
+3) test a bigger output
+
+./vote 33 11
+
+followed good order, and formating (output too big to include)
+
+
+4)test MC with default ./vote
+$ ./vote
+Voter0	Voter1	Voter2	Voter3	Voter4	Voter5	
+=======	=======	=======	=======	=======	=======	
+S	S	S	S	S	S
+V 0					
+B 1			V 0		
+			B 2		V 0
+					C
+...	...	...	...	...	F 0
+U 1					
+F 0	...	...	...	...	...
+			U 0		
+...	...	...	F 0	...	...
+		V 1			
+		B 1		V 1	
+	V 0			B 2	
+	C				
+...	F 1	...	...	...	...
+		U 1			
+...	...	F 1	...	...	...
+				U 0	
+...	...	...	...	F 1	...
+=================
+All tours started
+
+follows FIFO, no indication of race condition
+
+5) compare with prof sem ./vote_MC_64
+
+Voter0	Voter1	Voter2	Voter3	Voter4	Voter5
+=======	=======	=======	=======	=======	=======
+S	S	S	S	S	S
+	V 0
+	B 1				V 1
+V 0					B 2
+C
+F 0	...	...	...	...	...
+	U 1
+...	F 0	...	...	...	...
+					U 0
+...	...	...	...	...	F 0
+				V 0
+			V 0	B 1
+		V 0	B 2
+		C
+...	...	F 0	...	...	...
+				U 1
+...	...	...	...	F 0	...
+			U 0
+...	...	...	F 0	...	...
+=================
+
+alignment is similar, general order is the same
+
+6) test with bigger input
+./vote 33 11
+
+File followed general pattern, (output too big to insert into document)
+
+7) test for usage errors
+./vote derp
+Usage: ./voteVoters (> 0 & V mod G = 0, default 6)  Group (> 0 & odd, default 3)  Seed (> 0)
+
+got usage, as expected
+
+8) test for even group members
+./vote 33 10
+Usage: ./voteVoters (> 0 & V mod G = 0, default 6)  Group (> 0 & odd, default 3)  Seed (> 0)
+
+got usage as expected
+
+9) test for even number
+Usage: ./voteVoters (> 0 & V mod G = 0, default 6)  Group (> 0 & odd, default 3)  Seed (> 0)
+
+got usage as expected

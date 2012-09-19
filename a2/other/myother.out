@@ -1,0 +1,11 @@
+0(send 1, to 6) 1(for 6, 1) 2(for 6, 1) 3(for 6, 1) 4(for 6, 1) 5(for 6, 1) 6(rec 1, from 0) 7(ack 0) 8(ack 0) 9(ack 0) 10(ack 0) 0(ack)
+1(skip) 2(send 2, to 4) 3(for 4, 2) 4(rec 2, from 2) 5(ack 2) 6(ack 2) 7(ack 2) 8(ack 2) 9(fail 10, part 0) 9(fail 0, part 1) 9(elec 9?1 9?2 9?3 9?4 9?5 9?6 9?7 9?8 win 9) 9(ack 2) 1(ack 2) 2(ack)
+3(skip) 4(send 3, to 9) 5(for 9, 3) 6(for 9, 3) 7(for 9, 3) 8(for 9, 3) 9(rec 3, from 4) 1(ack 4) 2(ack 4) 3(ack 4) 4(ack)
+5(skip) 6(skip) 7(fail 8, part 9) 7(skip) 9(send 4, to 7) 1(fail 2, part 3) 1(for 7, 4) 3(for 7, 4) 4(for 7, 4) 5(for 7, 4) 6(for 7, 4) 7(rec 4, from 9) 9(ack)
+1(send 5, to 5) 3(for 5, 5) 4(for 5, 5) 5(rec 5, from 1) 6(ack 1) 7(fail 9, part 1) 7(elec 7?1 7?3 7?4 7?5 7?6 win 7) 7(ack 1) 1(ack)
+3(send 6, to 6) 4(for 6, 6) 5(for 6, 6) 6(rec 6, from 3) 7(fail 1, part 3) 7(ack 3) 3(ack)
+4(skip) 5(send 7, to 6) 6(rec 7, from 5) 7(ack 5) 3(fail 4, part 5) 3(ack 5) 5(ack)
+6(send 8, to 5) 7(fail 3, part 5) 7(for 5, 8) 5(rec 8, from 6) 6(ack)
+7(send 9, to 5) 5(fail 6, part 7) 5(rec 9, from 7) 7(ack)
+5(skip) 7(skip) 5(skip) 7(send 10, to 5) 5(fail 7, part 5) 5(elec win 5) 5(rec 10, from 7) 5(drop Ack)
+5(skip) no more partners

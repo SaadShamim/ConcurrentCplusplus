@@ -1,0 +1,33 @@
+1a.
+using CLASS
+
+time ./a.out
+user	0m0.100s
+
+with -O2
+user	0m0.020s
+
+using COROUTINE
+
+time ./a.out
+user	0m0.690s
+
+with -O2
+user	0m0.400s
+
+using TASK 
+time ./a.out
+user	0m2.180s
+
+-O2
+user	0m2.160s
+
+
+b. Class has no thread blocking or contexting switching, while coroutines allow for context switch as you move from one routine to another (your own self),
+TASK allow for not only context swithcing as well but its computed by the kernel, all these account for time differences.  
+Firstly, the standard CLASS is the fastest because every itteration calles rtn() as a function call, no context switching needed. CLASS sees the biggest time difference with -O2 optimization
+since the code is traditional g++ which the o2 has been optimized for (vs u++), also o2 optimization is precompilation so -o2 may put the function call inline, so instead of a function call, the code i += 1 runs
+directly in main.
+Secondly, coroutines have some context switching so the code will context switch to itself, this is why coroutines are slower. resume() initiates the switch, but the switch is to itself, this causes the decrease in time vs CLASS. 
+Finally, task are the slowest, this is because it context switches with itself similar to coroutines but the switching isn't handled by the thread, instead the context switching is handled by the kernel, this is why its slower then coroutines, with coroutines your stack will know where its resuming, while context switching in task are handled by the kernel.
+For -O2 optimization since the coroutines stacks know where it links, some optimizations can occur through -o2. However, for task since the context switching is handled by kernel, none of which is handled by our code, optimization of our code makes very little difference since the major delay is caused by context switching, which the kernel handles.

@@ -1,0 +1,46 @@
+an initial Test:
+$ ./tokenring 189 34 51 > me.out
+$ ./tokenring_64 189 34 51 > his.out
+$ diff me.out his.out
+[no difference found]
+
+//testing with a moderate number ofstations
+$ ./tokenring_64 500 11 10 > his.out
+$ ./tokenring 500 11 10 > me.out
+$ diff me.out his.out
+[no difference found]
+
+//testing with a large number of seed
+$ ./tokenring 500 11 1000 > me.out
+$ ./tokenring_64 500 11 1000 > his.out
+$ diff me.out his.out
+[no difference found]
+
+//large number of stations, seed and failure
+$ ./tokenring_64 500 518 1000 > his.out
+$ ./tokenring 500 518 1000 > me.out
+$ diff me.out his.out
+[no difference found]
+
+//testing with large number of stations to test more variations
+$ ./tokenring 1000 318 500 > me.out
+$ ./tokenring_64 1000 318 500 > his.out
+$ diff me.out his.out
+[no difference found]
+
+//testing with small value test
+$ ./tokenring_64 11 11 11 > his.out
+$ ./tokenring 11 11 11 > me.out
+$ diff me.out his.out
+[no difference found]
+
+//random seed test
+$ ./tokenring_64 11 11 > his.out
+$ ./tokenring_64 11 11 > hisother.out
+$ diff his.out hisother.out
+[diffs found]
+
+$ ./tokenring 11 11 > my.out
+$ ./tokenring 11 11 > myother.out
+$ diff my.out myother.out
+[diffs found]

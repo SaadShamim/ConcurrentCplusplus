@@ -1,0 +1,9 @@
+0(skip) 1(skip) 2(send 1, to 2) 3(for 2, 1) 4(for 2, 1) 5(for 2, 1) 6(for 2, 1) 7(for 2, 1) 8(for 2, 1) 9(for 2, 1) 10(for 2, 1) 0(for 2, 1) 1(for 2, 1) 2(rec 1, from 2) 3(ack 2) 4(ack 2) 5(ack 2) 6(ack 2) 7(ack 2) 8(fail 9, part 10) 8(ack 2) 10(ack 2) 0(ack 2) 1(ack 2) 2(fail 3, part 4) 2(ack)
+4(skip) 5(skip) 6(send 2, to 0) 7(for 0, 2) 8(for 0, 2) 10(for 0, 2) 0(rec 2, from 6) 1(ack 6) 2(ack 6) 4(ack 6) 5(ack 6) 6(ack)
+7(skip) 8(skip) 10(skip) 0(send 3, to 5) 1(for 5, 3) 2(for 5, 3) 4(for 5, 3) 5(rec 3, from 0) 6(fail 7, part 8) 6(ack 0) 8(fail 10, part 0) 8(ack 0) 0(ack)
+1(send 4, to 4) 2(for 4, 4) 4(rec 4, from 1) 5(ack 1) 6(ack 1) 8(ack 1) 0(fail 1, part 2) 0(drop Ack)
+0(skip) 2(skip) 4(send 5, to 4) 5(for 4, 5) 6(for 4, 5) 8(for 4, 5) 0(fail 2, part 4) 0(for 4, 5) 4(rec 5, from 4) 5(ack 4) 6(ack 4) 8(ack 4) 0(ack 4) 4(fail 5, part 6) 4(ack)
+6(skip) 8(send 6, to 0) 0(rec 6, from 8) 4(ack 8) 6(ack 8) 8(ack)
+0(skip) 4(skip) 6(send 7, to 0) 8(for 0, 7) 0(rec 7, from 6) 4(ack 6) 6(ack)
+8(skip) 0(send 8, to 0) 4(for 0, 8) 6(for 0, 8) 8(for 0, 8) 0(rec 8, from 0) 4(fail 6, part 8) 4(ack 0) 8(ack 0) 0(ack)
+4(skip) 8(skip) 0(skip) 4(skip) 8(fail 0, part 4) 8(elec 8>4 win 8) 8(fail 4, part 8) 8(skip) no more partners

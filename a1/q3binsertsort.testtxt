@@ -1,0 +1,111 @@
+Test Documentation:
+
+1. The first test consisted of testing with ints, given the inputs provided in the assignment. It tests:
+
+a) Multiple lists in a file
+b) unsorted numbers, being sorted
+c) sorted numbers, staying the same
+4) a list of 0 inputs not throwing any errors
+5) a list of just one root node working without errors
+6) printing with proper format on command line
+
+Test 1.1 
+
+intput file (data1)
+8 25 6 8 5 99 100 101 7 3 1 3 5 0 10 9 8 7 6 5 4 3 2 1 0 1 1
+---------------------------------
+
+$ make binsertsort TYPE=int SENTINEL="-1"
+
+$ ./binsertsort data1
+
+25 6 8 5 99 100 101 7 
+5 6 7 8 25 99 100 101 
+
+1 3 5 
+1 3 5 
+
+
+
+
+9 8 7 6 5 4 3 2 1 0 
+0 1 2 3 4 5 6 7 8 9 
+
+1 
+1 
+
+---------------------------------
+Test 1.2 This tests the same as above, but checks if an output file is present that it puts the output in the output file
+
+$ ./binsertsort data1 data2
+$ cat data2
+
+25 6 8 5 99 100 101 7 
+5 6 7 8 25 99 100 101 
+
+1 3 5 
+1 3 5 
+
+
+
+
+9 8 7 6 5 4 3 2 1 0 
+0 1 2 3 4 5 6 7 8 9 
+
+1 
+1 
+
+---------------------------------
+Test 2: 
+a. Checks for a list of doubles
+b. unsorted list
+c. sorted list
+d. size 0 list
+e. size 1 list
+
+input file (datadouble):
+5 5.1 3.4 7.3 5.9 1.9 3 1.4 3.5 5.1 0 1 7.3
+---------------------------------
+
+$ make binsertsort TYPE=double SENTINEL="-1."
+....
+$./binsertsort datadouble
+:5.1 3.4 7.3 5.9 1.9 
+1.9 3.4 5.1 5.9 7.3 
+
+1.4 3.5 5.1 
+1.4 3.5 5.1 
+
+
+
+
+7.3 
+7.3 
+
+---------------------------------
+Test 3: Test for
+a. list of chars
+b. unsorted list of chars
+c. sorted list of chars
+d. list of 0 chars
+e. list of 1 char
+
+input file (datachar):
+5 e g h a i 3 a b c 0 1 a 
+---------------------------------
+
+$ make binsertsort TYPE=char SENTINEL="'\377'"
+...
+$ ./binsertsort datachar
+e g h a i 
+a e g h i 
+
+a b c 
+a b c 
+
+
+
+
+a 
+a 
+

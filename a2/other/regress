@@ -1,0 +1,49 @@
+#!/bin/bash
+#
+# Compare output from two programs printing any differences.
+#
+# Usage: regress program1 program1-options program2 program2-options [ argument-list ]
+#
+# Examples:
+# regress ls ls
+# regress ls ls “a b c”
+# regress cat cat -n regress regress
+# regress regress “cat cat -n ” regress “cat cat -n ” regress regress
+# regress myprog -w samplesoln -w 27 100 -2 -100
+usage() {
+	echo "Usage: ${0} program1 \"program1-options\"" \
+		"program2 \"program2-options\" argument-list"
+	exit 1
+}
+process() {
+	# process parameters
+	for parm in "${@}" ; do
+		# must use eval to reevaluate parameters
+		eval ${prog1} ${opts1} ${parm} > /tmp/tmp1_${USER}_${$} 2>&1 # run programs, save output
+		eval ${prog2} ${opts2} ${parm} > /tmp/tmp2_${USER}_${$} 2>&1
+		diff /tmp/tmp1_${USER}_${$} /tmp/tmp2_${USER}_${$} # compare output from programs
+		if [ ${?} -eq 0 ] ; then
+			# check return code
+                        true
+			#echo "identical output"
+		else
+			echo "Failed with: ${prog1}	${opts1} ${parm}"
+			echo "and:         ${prog2}	${opts2} ${parm}"
+			return 1
+		fi
+		rm /tmp/tmp1_${USER}_${$} /tmp/tmp2_${USER}_${$} # remove up temporary files
+	done
+}
+# check command-line arguements
+if [ ${#} -lt 4 ] ; then usage ; fi
+if [ ! -x "`type -P ${1}`" ] ; then echo "program1 is not executable" ; usage ; fi
+if [ ! -x "`type -P ${3}`" ] ; then echo "program2 is not executable" ; usage ; fi
+prog1=${1}
+opts1=${2}
+prog2=${3}
+opts2=${4}
+shift 4
+# copy first 4 parameters
+# remove first 4 parameters
+if [ ${#} -eq 0 ] ; then process "" # process empty argument-list
+else process "${@}" ; fi # process argument-list

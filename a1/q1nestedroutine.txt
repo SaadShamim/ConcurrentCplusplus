@@ -1,0 +1,15 @@
+frame#	call	&hv		&gv		fram:hv	fram:gv
+==============================================
+2	h(2,0)	0x7fffb3546448			
+3	h(1,0)	0x7fffb35463f8			
+4	h(0,0)	0x7fffb35463a8			
+5	g(1,0)	0x7fffb35463a8	0x7fffb3546358	4
+6	g(0,0)	0x7fffb35463a8	0x7fffb3546308	4
+7	h(1,1)	0x7fffb35462b8			
+8	h(0,1)	0x7fffb3546268			
+9	g(1,1)	0x7fffb3546268	0x7fffb3546218	8
+10	g(0,1)	0x7fffb3546268	0x7fffb35461c8	8
+11	f(1)	0x7fffb3546268	0x7fffb35461c8	8	10
+12	f(0)	0x7fffb3546268	0x7fffb35461c8	8	10
+
+lexical link: Scoping is usually isolated to frames, however there are times when referring to previously defined variables (nested loop) to be referenced, to reference these variables the lexical link does name substitution which allows nested loops to be able to access data from its parent (and parents parent, if any); Linking is independent of the runtime call stack.

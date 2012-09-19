@@ -1,0 +1,913 @@
+321
+Phil0	Phil1	Phil2	Phil3	Phil4	Phil5	Phil6	Phil7	Phil8	Phil9	Phil10	Phil11	Phil12	Phil13	Phil14	Phil15	Phil16	Phil17	Phil18	Phil19	Phil20	Phil21	Phil22	Phil23	Phil24	Phil25	Phil26	Phil27	Phil28	Phil29	Phil30	Phil31	Phil32	Phil33	Phil34	Phil35	Phil36	Phil37	Phil38	Phil39	Phil40	Phil41	Phil42	Phil43	Phil44	Phil45	Phil46	Phil47	Phil48	Phil49	Phil50	Phil51	Phil52	Phil53	Phil54	Phil55	Phil56	Phil57	Phil58	Phil59	Phil60	Phil61	Phil62	Phil63	Phil64	Phil65	Phil66	Phil67	Phil68	Phil69	Phil70	Phil71	Phil72	Phil73	Phil74	Phil75	Phil76	Phil77	Phil78	Phil79	Phil80
+******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******
+H	H	H
+		E2,76	H	H	H	H	H
+							E2,76	H	H	H	H	H	H	H	H	H
+																E3,75	H	H	H	H	H	H	H	H	H	H	H	H	H	H	H	H	H
+																																	E2,76
+																																	T	H	H	H	H	H	H	H	H
+																																									E5,73	H	H	H	H	H	H
+																																															E1,77	H	H	H
+																																																		E4,74	H	H	H	H	H	H	H	H
+																																																										E4,74	H	H	H	H	H	H	H	H	H	H	H
+																																																																					E3,75
+																																																																					T	H
+																																																																						E2,76	H	H	H	H	H	H
+																																																																												E5,73	H	H	H	H
+		T	W3,4			W6,7			E5,73			E4,74										E4,74						E3,75			E2,76						E2,76					W42,43			E4,74					T	E5,73												E1,77																	E3,75
+			E2,76	W4,5				W8,9	T		W11,12	T
+		H							H		E1,77		E1,77			T				E1,77					E4,74	W26,27	W27,28			W30,31	T		H																																				H
+												H				H														E5,73	H	E1,77			E1,77														E4,74	H	T					E1,77	W57,58			E5,73
+	E1,77									W10,11				W14,15	E1,77		E3,75	W18,19	W19,20			T	E5,73						W29,30					W34,35				W38,39	E1,77	W40,41					T	W46,47	T				H													W64,65		E1,77	W67,68	E4,74										E2,76
+W0,1			T	E2,76	W5,6		T															H																							H	E1,77	H					E5,73	W53,54						W59,60												W71,72	E2,76	W73,74		W75,76				W79,80
+			H			E5,73	H	E1,77													W21,22			W24,25			E2,76	T								W36,37	T				T	E1,77	W43,44	E3,75				W48,49						E2,76	W55,56
+																												H									H																					T			W61,62	W62,63	T	E4,74
+																																																										H				E1,77			W65,66					T				E1,77		T
+		W2,3							W9,10	E4,74	T		T						E1,77	T	E4,74				T							T	W33,34								H									W50,51													H						W69,70	H							W77,78			T
+											H		H																E3,75	T	W31,32		E4,72		T	E1,77																																								H				H
+												E4,70				W16,17				H					H						E5,71	H																E5,73	T	E2,72						T	E4,74		E1,77	T
+E5,73	T	E5,71												E2,76	T	E4,71	T						T	E1,77						H					H				T										H		W51,52					H				H						T	E5,73	T	E5,70								E1,77	T	E5,73
+	H																H						H															E1,77		E1,77						T	W47,48					T														H		H				T						H
+			W3,4	T	E1,77	T	E4,72	T							H							W22,23																	H						W45,46	H						H																			E4,74
+				H				H																		E3,75	T															T	E5,73	T	E4,70								E1,77	T	E5,73																	H
+						H			E2,71	T								E2,76	T		T						H	W28,29									W37,38				W41,42	H		H										H				W58,59			E3,75	T	E1,76	T	E1,77					W70,71			E3,75	T	E5,73
+																						E2,72							T		T		T	E5,73																												H		H												W76,77				W80,0
+										H	W11,12	T	W13,14						H	E5,72					W25,26			E3,72					H			T																																						H
+											E5,72										H										H	E4,73															E2,75	T		T	E5,68					W56,57
+																													H						W35,36	H												H	E1,73								T	E3,71	T								T		T
+T		T	E5,71									H				T														E3,70																				H							H		H	W60,61							H										T		T	E3,72
+H													E1,76	T		H	W17,18																					T																												W66,67		E1,73	H								H		H
+	E4,73																						W23,24	T													E5,71	H		T	E3,70																																					E2,74
+		H												H	E1,76																									H						W46,47																								E4,72	T
+				W4,5	T		T	W8,9																H	E2,72	T													E3,74						T							W52,53			T																H
+					H	E3,70	H																			H	W27,28															W42,43	T	E1,74									T	E3,73		E3,74				E4,69	T		T		T	E1,76						W72,73			T
+									T																																		H		H								H		H										H							E3,73	T			E2,71
+								E1,76	H								E3,72	T				T	E1,72					T					W33,34	T	E2,75																										H	E5,72	H	E3,71									H		H
+										E5,69	T							H	E2,75	T	E4,70						E1,75	H																			T																											E5,72
+											H									H		H									W31,32	T	E1,71	H												E4,73	H	W48,49	T		T	E4,69
+																													W29,30	T		H				W36,37												E2,71										T
+			T	E2,74								W12,13	T																E1,74		E2,69																		H	E2,70	H						W57,58	H	W59,60								W67,68													T
+W0,1			H									E4,66	H			W16,17														H							T	W38,39		W40,41	T	E2,75																										T	W69,70								W77,78		W79,80	H
+E5,68	T													W14,15	T																						H																															H	E3,67	T								T	E2,71
+		E4,67												E5,71										W24,25	T														T																															H	W71,72
+	H																																					E1,76	H	E1,76	H															T	E4,70																					H
+					W5,6	T	W7,8								H											W26,27																		T												H			E1,76	T						T	E4,69
+																																											W43,44	H										T	E1,72										W65,66							T
+																									H																													H						H						H					E4,70					T	E5,72
+						H	E3,69	T	W9,10							E3,68	T																												W45,46								W53,54								W61,62	T	W63,64									H	W73,74		W75,76	H
+								H									H	W18,19					T	E5,72			T	W28,29							T	E1,76																									E2,73	H	E3,73	T	E3,74								E4,71	T	E5,68
+									E1,70	T								E2,74	T	E5,67	T		H			E2,73	H								H										E5,65	T	W47,48																	H										H
+											W11,12								H		H	E1,71									T	W32,33	T	E1,72												H	E5,70	T				T	E3,74
+										H																		E1,71	T		H	E1,72																	W49,50	T	W51,52							W58,59
+												T																																					E4,69		E3,65
+				T	E2,75						E4,68	H																	H	E3,67			H															H		H		H
+T			W3,4	H									W13,14																								W37,38					T	E5,68																									W68,69	T										T	W80,0
+H		T	E4,67											T																																																																		E5,67
+	E3,70	H											E3,73	H																								T	W39,40	T		H														W56,57													H	W70,71								W78,79	H
+															W15,16																								E3,71		E5,65																T	E1,70	T
+																																												W44,45															H								T
+																									W25,26													H		H														W54,55	T	E3,71				W60,61						W66,67	H	E2,71		E2,70	T						T
+						W6,7	T								E3,73	T																																									H			E4,65	T										H	W72,73				W76,77	H	E1,73
+							H	W8,9								H	W17,18							T												T																			H								T		T	E3,73
+																								H													E1,70																								H		H		H								T	W74,75	T	E1,70
+																	E1,71	T					W23,24			T																																				E1,71										E2,71	H	E1,71	H
+								E2,74	T											T	W21,22	T			E4,68	H	W27,28								W35,36	H									T	W46,47																		E4,67
+									H	W10,11								H	E3,72		E2,68	H	E5,67									T		T	E1,74										H	E5,68	T						T	E5,68
+																											E1,74	T			W31,32																H				T		H
+											T	W12,13								H								H																					T
+				W4,5	T	E1,69				E1,68	H																		E4,70	T	E2,67	H	E1,70	H									T	E3,71				E2,69	H	E2,68		E3,66
+W0,1		W2,3	T	E3,71	H																									H													H								H																												W79,80	T
+E1,67	T	E5,62	H									E5,61	T	W14,15																											T	W42,43																																						H
+													H																										T			E1,74																	W59,60										W69,70
+																																						W38,39	H	E2,74																T		T									W67,68	T		T								T	E2,69
+	H													E2,69	T																										H															H													E1,66	H	W71,72							H
+							W7,8								H	W16,17								W24,25													T	E2,74																	W55,56		E3,67	H	E4,72	T	W61,62				W65,66	T	E4,65	H						T	W75,76	T	W77,78
+																E2,66	T								T	W26,27											H																							H	E2,71	T	W63,64	T	E4,70	H					E1,69	T	E1,70		E5,63	H	E2,70
+								T													T	W22,23	T	E3,69												W36,37																											E3,70									H		H
+								H	W9,10								H	W18,19	T		H	E3,68			H										T	E3,73									W45,46	T							W53,54	T	E3,69							H		H
+																		E1,73								E2,71	T	W28,29							H											H	W47,48
+									E5,65	T									H				H				H																											H
+						T	E2,67			H	W11,12									E3,64								E2,69	T		T	W32,33	T	W34,35													E4,66	T		T		T	E1,73
+				T	W5,6																								H			E3,69		E2,70										T	E3,62				E4,65	H		H
+T		T	W3,4		E3,72	H					E1,67	T																		E5,62	H		H										W43,44	H				H			E1,64																													W80,0
+H			E3,64										W13,14																										W39,40	T		T	E4,64																																				T
+	E5,65	H		H								H	E4,69	T	W15,16																									H	E1,64	H														W56,57	T	E4,66	T								T	W68,69	T	W70,71								W78,79	H	E2,65
+														H																								T	E1,70																				H	W60,61								E2,69	H						T	W76,77	T	E2,71
+															E1,72	T																					W37,38	H																			H			E4,61	T		T		T	W66,67	H			E4,66	T		T		H	E4,66	H
+																H	W17,18				W21,22	T		T	W25,26																														T	E4,67					H	E5,66		E4,63	H	E5,68					H	E2,69	H	E4,67
+								W8,9									E4,67	T	W19,20			H		H		T									W35,36	T	E3,67									W46,47																	H
+									T	W10,11								H	E2,70	T	E2,66		E1,66		E2,66	H	W27,28																										T	W54,55	H
+							T	E4,70												H							E2,72	T				T		T	E5,69	H											T						H	E4,64
+									H																			H	W29,30		W31,32	H		H											T	E3,65	H	E4,65	T	W50,51	T	W52,53
+					T		H																																											E5,63		E5,61
+W0,1			T		H	E3,66				E4,64	T																		E4,66	T	E2,65		E2,68										T	W44,45	H				H
+E2,65	T			E1,70							H																			H										W40,41		W42,43		E5,66							H																													T
+												W12,13	T																												T	E5,69																																					W79,80	H
+	H	E3,59	H									E3,58		W14,15																									T	E4,70	H		H															T										T	W69,70									T
+																																							H																		W57,58		W59,60	T								H							W75,76	T	E3,67		E1,68
+													H	E4,65	T																							W38,39																				H	E1,71	H						T	W67,68		E3,63	T								H
+															H																																																				E5,60					T	W73,74	T	E1,62	H
+																																																								T	E4,63				E4,67	T		T	W65,66					H	E3,66	H	E3,67
+																W16,17	T					W22,23		W24,25													T	E5,69																		H									E4,66	H								H
+																E3,63	H	W18,19	T		T				T	W26,27																																				H	E1,69	H
+																		E5,68		E5,59		E2,66	T	E4,65	H												H																	T	W55,56
+								T											H							E5,66	T									W36,37																			E1,68
+								H	W9,10												H		H									W32,33			T	E5,68																	W53,54
+																											H	W28,29							H											T	W47,48	T		T				H
+						T	W7,8																											W34,35													E4,62			H		T	E2,71
+					W5,6		E4,63			T																					T	E3,66	T	E5,65															E5,60
+						H			E5,60																			E3,66	T		H		H											T	W45,46	H		H			E4,60	H
+T				T	E5,67					H	W11,12	T																		E2,60												T			E3,59																																			W80,0
+H	E4,61	T	E5,59								E5,62	H																	H											T	W41,42	H	E3,61	H
+		H		H									W13,14	T																									W39,40	H	E5,59																	W58,59	T									W68,69									T		T	E2,63
+													E4,65	H	W15,16																																												H	W60,61							T	E3,66	T				T		T	W76,77	H	E3,68
+																																																																					H	W70,71	T				H	E4,62			H
+																																																								W56,57	T	E4,62		E1,60	T				T					E3,63	H	E1,68		E1,66
+																																						T	E2,68																						H	W62,63			H	E4,64	H						H
+															E1,71	T	W17,18																					H																									T
+																H	E3,64	T		T		T		T	W25,26																														T	E4,63	H					E3,63		E4,59
+								W8,9										H	E4,66		E4,62	H	E2,64	H	E1,65	T										T	W37,38																										H
+																				H						H	W27,28								W35,36		E4,63										T						T	W54,55	H
+						W6,7	T	E3,67	T																						W31,32	T	E4,64	T	E3,66	H										W46,47	H		T	W50,51			H	E5,59
+							H		H																		E5,67	T				H																E1,64	H		T	W52,53
+					T																									T	E5,60																			E1,62		E2,59
+						E2,64				W10,11	T	W12,13																		H				H											T	E4,61					H
+					H					E4,60																		H	E2,64													W42,43	T	W44,45
+W0,1	T		T	E2,68							H																													W40,41	T	E5,64		E3,63
+E3,62		E1,58																																							H				H																																			T
+	H		H									E5,53	T	W14,15																													H																W59,60									T							W75,76		W77,78	T		H
+													H																																																							H	W69,70	T						T	E4,63		E4,64
+																																																										T	E5,66	T									E3,60		E5,61	T		T	E3,59			H
+																																							T																			H		H	W61,62				W65,66	T				H			E4,63	H
+														E2,63	T																							W38,39	H	E5,65																					E5,62	T					E5,55									H
+															H		T																																																							H
+																E5,58	H		T						T																															T	W57,58						E4,65	T	E5,61	H
+																		E1,67				W22,23	T	W24,25																																H	E5,58					H
+																			H	E4,55	T	E2,64		E3,62	H	W26,27											T	E3,66									W47,48							T	W55,56									H
+																					H														T	W36,37																	W53,54		E4,64
+								T	W9,10														H										T		H	E5,63												T
+							W7,8																			E3,63	T			W30,31		W32,33	H				H											H	W49,50	T		T	E5,66	H
+								H																			H				T	E5,61		E1,64												T			E4,56			H
+						T	E1,62		E4,56	T																		E2,64	T	E5,55	H															H	E3,59			H	E4,56
+				T	W5,6	H				H	W11,12																																	T
+T					E4,63																																				W41,42	T			E3,56
+	E2,59	T	E3,56								E4,58	T																	H													H	E4,57	H																																			T	W80,0
+H		H		H								H	W13,14																																														T									W68,69	T		T			W74,75			T	E5,63	H	E2,61
+																																								T	E2,57																																T	E5,61	T		H
+																																							W39,40																			W58,59		W60,61							T			E2,61	H				H	E5,57
+													E3,62	T	E5,66	T	W17,18																							H																			H	E4,56	T		T		T	W66,67	H	E2,64	H			E5,63	H
+																	E5,59	T						T																																W56,57	T	E5,57				E1,62	H			E2,62
+																H			W19,20			T			W25,26													T	E1,67																		H				H
+														H				H	E3,63	T	E3,59	H	E1,63	H									W33,34		W35,36	T		H																	T	E3,60								E5,54	H
+																				H					E1,64	T											E4,59											W48,49	T				T	W54,55
+								W8,9																		H	W27,28					T				H											T	E5,59	H	W50,51		W52,53		E1,58	H
+							T	E4,63	T																					T			E4,60	T	E5,61											W46,47	H			E1,61	T	E2,57	H
+					T	W6,7	H			W10,11																	E4,63	T		H	E5,55	H		H																	H
+	T				H	E1,63			H	E3,57	T																		E5,59													W42,43	T		T	E5,56
+E4,58		E1,57	T	E5,63							H	W12,13																H																E4,59	H																																	T	W79,80	T
+	H		H																																						T	E1,63	H																												W71,72			T	W75,76	T	W77,78	H	E4,60	H
+																																									H																		W59,60	T								T	W69,70	T	E5,56	T			E5,54	H	E2,61
+												E4,49	T		T																									W40,41																										T	W67,68	H	E1,59	H		H	E2,61	H
+																	T																																								W57,58	T	E2,64			T	W63,64			H	E5,50
+													H	E1,62	H	E1,57	H							W24,25														W38,39	T	E1,64																		H		H	E5,57	H	E1,64	T	E1,60
+																		E2,65	T	E2,53	T	E2,62	T																																	T	E4,54							H
+																					H			E3,59	T	W26,27										W36,37	T	E3,63	H										W49,50					T	E4,60
+																			H				H												T	E4,59											W47,48	T						H		H
+																																	T		H		H											H				T	W53,54
+							W7,8	T																	H	E5,58	T				T	E5,56		E1,63															E1,55	T		H	E3,63
+						T	E4,58	H	W9,10																		H			W30,31			H													T	E1,58			H	E1,55
+					W5,6	H			E1,55	T	W11,12																		T	E4,51															W45,46
+				T	E3,60																								H		H													T	E4,52
+T	E3,56	T		H						H																		E4,60														T	E1,56	H		H																																W78,79	T	E1,60
+		H	E2,54																																						W41,42																																		T	E5,52	T	E5,58
+H											E2,56	T																														H																									T	E3,61	T	E3,58	T	E3,60	T	E4,57	H		H		H
+												H					W17,18																																										T							W66,67	H		H
+													W13,14		W15,16	T																								T																		W58,59	H	E3,53	T		T										H
+													E3,59	T	E1,65	H	E3,56	T		T																				H	E2,55																T	E5,52			H	E2,60	H	E3,51	T	E5,57					H
+																					E5,54	T		T														T																											H
+														H				H	E3,60			H	E2,61												W35,36	T	E4,55		E5,62									W48,49	T				T	W54,55	T	E4,56	H
+																				H				H	E5,59	T								T	E3,58			H														W52,53		E1,57	H
+							T																			H						T	E3,57	H		H													H	W50,51	T	E5,52
+						W6,7	H	W8,9	T																		W27,28			T		H															T	E4,55		E2,59			H
+					T	E5,58		E3,60																				T	W29,30		E3,52																				H
+	T			W4,5						W10,11																	E2,61	H	E5,54	H													T	W44,45	T	E4,52	H
+	H	W2,3	T	E4,59	H				H																																		H	E1,58																																				T
+		E1,56																																																																										T	E2,59	T
+			H								T																															W42,43			H																									T		T		T	E4,50	H			E1,59
+E2,56										E4,53	H	W12,13																																																							W67,68	T	W69,70									H		H
+																																									T	E1,62																	W59,60	T								H	E1,58			H	E5,56	H
+																																									H																			H	W61,62	T	W63,64	T		T	E3,47			H	E5,51
+												E5,44	T		T	W16,17	T																							W40,41																		T	E3,61		E5,52		E2,62	H		H
+													H	E2,60	H	E2,55		W18,19	T		T	W22,23																	T	E3,61																T						H			E1,59
+																		E5,60			H	E3,59	T		T												T	E3,60																T		H	E1,53	H
+																	H		H	E4,49			H	E1,58	H	W26,27								W34,35	T	E5,54	H		H										W49,50			T		H	E4,56
+																																W32,33	T	E3,60														T		T		H
+						T	W7,8	T																							T	E4,52	H		H													H	E2,53	H	E3,52		E1,62
+	W1,2	T		T	W5,6	H	E5,53	H	W9,10																	E4,54	T	E4,56	T	E3,48	H												W43,44	T		T	E5,53
+			E5,49		E1,59																						H		H															H	E5,47	H																													T	W76,77	T		T
+T	E5,51	H		H					E2,53	T	W11,12																															T	E3,53																									W68,69	T			W72,73	T		H	E2,50	H	E1,57	H	E4,56
+H										H		T																													W41,42	H																		W60,61	T			W64,65		W66,67	T	E1,60	H	E4,54	T	E3,57	H	E4,53
+											E1,55	H																																															T				T
+													W13,14	T		T																								T	E5,50																		H	E3,50	H	E1,59		E5,46	T	E5,52	H				H
+													E3,56		E4,61			T			W21,22	T																																	T		T	E1,51					H
+														H		H		H					W23,24	T														T																		E1,55	H								H
+																	E5,51		W19,20	T	E5,49	H	E4,57																E2,60	H															H
+																			E1,59						W25,26											T	W37,38																	W54,55
+																								H										T			E4,51	H											T			W52,53
+							T	W8,9												H											W31,32	T	W33,34	H	E5,53	H												W48,49	H	E3,56	T	E2,50	T	E5,52
+						W6,7	H																		E1,58	T		T					E3,54														T	E4,51			H
+					T	E2,56																				H			E3,51	T	E4,48																H						H
+			T		H																						E4,57					H												W44,45	T																														W75,76
+	T		H					E2,58	T																			H		H															H	E4,48																														T		T		T
+	H	E1,55		E1,58					H	W10,11																																	T	E3,55																														T	E5,45	H	E2,57	H	E1,58	H
+E3,53																																										W42,43	H																									T	E1,57	T		T
+										E2,51	T	W12,13																																															W59,60	T												H	E1,55
+																																																												H	W61,62			T		T	W67,68	H		H	E3,48			H
+											H	E3,41	T	E1,59	T			W18,19																							T	E3,59															W57,58	T	E2,59		E4,48	T	E2,60	H	E4,55		E5,42
+													H		H	W16,17	T					W22,23																		W40,41	H															T	E1,52	H				H				H
+																E3,52	H				T	E2,57	T																T	E1,60															W55,56	H
+																		E1,59	T				H															W38,39
+							W7,8												H	E1,48				W24,25									T	W34,35	T	E3,51	T	E4,56	H										W49,50	T		T		T	E3,53
+																					H			E4,54	T						T		H	E3,57	H		H										W47,48	T	E5,48		E5,47		E3,59
+					W5,6	T																			H	W26,27	T		T																W45,46	T	E2,51	H		H		H		H
+			W3,4	T		H	E1,52	T																		E2,52		E4,52		E5,43	H	E2,50																																															T
+	W1,2	T	E4,45	H	E4,55				W9,10																		H		H															T	E4,43	H																													T	W76,77	T	W78,79		W80,0
+T	E3,48	H						H	E3,50	T																																	W43,44	H																W60,61								W68,69	T			W72,73	T		H	E5,45		E3,54	H	E1,55
+H										H	E2,53	T																														T	E3,50																T		T		T				T	E1,59	H	E1,53	T	E3,54	H	E5,48			H
+																																										H																		E3,47				W64,65	T		H				H
+																																																									T				H			E1,45
+														T																																											H
+												H	E2,54	H	W15,16	T																																										E5,46	H			E1,58	H			E4,48
+															E3,58		W17,18	T				T																			W41,42															W56,57
+																H	E4,47	H	W19,20	T			W23,24															T		T	E4,46														T	E3,52									H
+																			E5,54		E3,46	H		T									W33,34	T		T	E4,47		E5,55										T
+																				H			E3,54	H										H	E3,50			H		H								W48,49	H		T	E4,46	T	E3,49	H
+																									W25,26	T				T		T	E4,50			H											T	E2,49		E2,54	H		H
+				W4,5		W6,7	T																		E3,55	H		T		H	E3,45																H
+			T	E1,57	T	E3,53																						H																	T	W46,47
+	T		H				H	W8,9																			E1,56		E2,49			H														E1,47																														T		T	W79,80	T
+E3,50		E4,51			H			E5,53	T	W10,11																																		W44,45	H																											T	W73,74		W75,76	H			E5,53	H
+	H								H																																																											T	W69,70	T		H	E2,53	T	E1,44		E3,54	H
+										E1,50	T																															W42,43	T	E5,50													W57,58			T	W61,62	T		T			W67,68		E3,54	H	E5,43			H
+												W12,13		W14,15																													H																	H	E1,47		E1,59			T	E3,39	H
+											H	E2,39	T	E1,58	T																																											T	W59,60			H		H		H
+													H			E5,47	T	E1,58	T		T																		T		T	E3,56														T	E2,50		E5,54						E5,50
+															H																						T				H
+																	H			E2,46		W22,23	T	W24,25													H	E2,54		E4,56									W49,50									H
+																			H			E3,54												W34,35	T																W51,52
+																					H		H												H				H													T		T	W55,56	H
+																																				E5,46												T	E3,45	T	E5,42		E4,55		E4,49
+				T		T																		E1,53	T	W26,27		W28,29		W30,31	T		T	E4,53												T	W47,48	H		H		H		H
+			W3,4	H			W7,8																		H	E3,49	T	E1,51	T	E5,38		E2,48	H														E3,48																																T
+		T	E4,41		E2,53	H	E4,48	T																			H				H														W45,46	H																														W76,77	T			W80,0
+T								H	W9,10																				H																																																			E2,53
+H	E5,43																																																																							W72,73	T		T	E3,42		E5,49	H
+		H							E4,46	T																																		T	E2,41																								T	W70,71	T	E3,51	H				H
+																																											W43,44	H																W60,61	T		T				T	W68,69		E3,50				E1,47	H
+										H	W11,12	T		T																																																E1,57				W66,67		E5,54	H
+											E3,50																															T	E2,48																		H			W64,65	T	E4,44	H				H
+												H	E2,52					T																																									T	E4,43				E4,41
+														H	E3,55	T	E1,46	H																			W37,38	T		T	W41,42	H															T	E5,41	H				H		H
+																H				T		T													W35,36						E1,45																H
+																			E2,52		E5,41	H																	E5,50	H															T	W56,57
+																				H			W23,24													T	E3,44	H												W50,51	T		T			E5,47
+																							E2,52	T																									T	E5,49	H
+																																		T	E4,46	H												W48,49	H					E3,46
+			T	W4,5	T		T																	H	E1,54	T	E4,52	T		T	E5,40	T	E4,46	H												W46,47	T	E2,47				E1,45	H		H
+W0,1				E5,52		E4,49		W8,9																		H		H	E4,45	H		H															H																															T	W79,80	T
+	T																																																																														E3,50
+E4,46	H	E4,47	H		H		H	E2,51	T																																				T	E2,45																										T	W73,74	T		T	E5,49
+																																												W44,45																									W69,70	T		H	E3,50		E5,39			H		H
+									H	W10,11	T																																																			T						T	E3,51	H						H
+										E1,49	H																																T	E3,47	H																W61,62	H		T		T	W67,68				E1,42			H
+												W12,13	T																																															T	E4,43						E3,36
+												E4,35		W14,15	T			W18,19																								W42,43	H																				E1,58	H		H		H
+													H	E2,56		E2,45	T		T			W22,23																	T		T	E1,55															W57,58	T	E5,49	H					E5,45
+															H		H	E2,56	H		T																	W38,39		E4,52											W51,52					T	E4,46	H
+																				E2,44	H	E1,53	T											W34,35	T	E5,41	T	E5,49	H		H								W49,50	T						H
+																							H														H											T	E5,40		E1,41	T	E5,50	T	E2,47
+																								E5,48	T		T						T	E2,51														H				H
+				T		T																			H	E3,46	H	W28,29			T	E2,46			H												W47,48			H				H
+	W1,2					H																						E3,48	T	E2,36	H		H																																														T
+T	E2,41	T		H	E2,51		W7,8																						H																	T	E1,47																																H
+H		H	E3,38				E2,46	T																																						H																										W72,73	T				T	E2,47		E1,52
+																																																																					T						T		H
+								H	W9,10	T																																																				W62,63							H	W70,71						E4,38
+									E5,41																																			T	W45,46																												H
+											W11,12	T																																	E1,40																						T			E3,47	T	E5,46		E1,46	H
+										H	E3,47																																W43,44	H																	T			W64,65		W66,67	H	E3,51			H
+													W13,14	T																																														W60,61	H	E3,54	T	E5,36	T	E4,40
+												H	E3,49			T			W19,20																							T	E4,44															W58,59	T	E4,39					H
+														H	E4,51	H	E1,45	T	E2,50	T	W21,22																	T	E1,49	T	E5,40	H														W56,57	T	E1,40					H
+																					E4,37	T														T				H
+																		H		H			W23,24													H	E4,40	H													T	W52,53			T		H		H
+																						H	E1,51	T			W27,28																					W48,49	T		H	E5,40	T			E3,44
+						W6,7																		H	W25,26	T					W31,32	T		T	E1,45															E2,47			H	E2,44	H
+																									E5,49		E3,49	T		T		H	E5,41	H															H																														W79,80
+	T			W4,5	T	E3,46	T																			H		H	E4,41	H	E5,35																T	E1,46
+W0,1			T		H		H																																							W46,47
+E5,41			H	E3,49																																											H																															T		T
+	H	E1,46						W8,9																																																													W69,70							T	W77,78	H	E1,49
+								E5,46	T																																				T	E3,42																											W73,74	T	E1,38		E4,45			H
+									H		T																																																								W67,68			T		T	E5,45	H
+										E1,48	H																																T	W44,45	H																W61,62	T		T		T	E3,33	T	E3,48	H	E5,37	H				H
+												E1,34	T	E5,51	T	W16,17	T																											E5,42																T	E4,39	H		H	E1,44	H		H
+																E4,41																										W42,43	H															T		H			E1,57
+													H		H				T																	W36,37			T	E1,51	T	E2,53																H
+																					T																				H																		E3,46
+																		E2,54	H	E2,42	H																T	W38,39	H												W51,52
+																	H					W22,23																E2,47																		T	W57,58
+																						E2,51	T	W24,25													H													T	E3,38	T		T		H	E2,44
+																							H	E1,47	T	E2,44	T					W32,33	T	E4,47	T	E5,36													W49,50	H			E2,48		E4,43
+																											H	W28,29	T	W30,31	T	E2,44	H		H																	H		H
+T			W3,4	T	W5,6	T	W7,8																		H			E1,47		E5,31																	W47,48	T	E3,37
+H	E5,36	T	E2,36	H	E4,47																								H		H																																														T	W78,79	T
+		H				H	E2,44	T	W9,10	T																																				T	E2,45	H																									T	E1,45	T		H	E2,45	H	E5,47
+									E5,36																																					H																									T	W72,73
+								H		H																																			W45,46																								T	W70,71	H	E5,41	H			E3,35
+											W11,12																																	T	E3,37																	W62,63			T	E3,37	T			E2,45					H
+												T																																																	T			W64,65	H			E2,49
+											E3,44			T		T																											W43,44																	W60,61	H	E1,53	T	E2,34			H		H
+												H	E3,46		E3,48	H																								T	E3,37	T	E3,41	H														W58,59	T	E2,37			H
+														H			E4,41	T	E4,46	T	W21,22	T															W37,38	T	E3,46			H															T	E4,36
+																		H		H	E1,36	H	W23,24	T										T		T	E3,37	H		H											T				T	E5,39			H
+																							E2,49			T	W27,28	T				T	E3,38	H	E2,43	H														W50,51	H	E3,37	T	E3,41	H		H
+W0,1	T		T	E3,46	T																			H	E1,48	H	E3,46	H	E3,38	T	E3,32	H																	T	E5,42			H																									T
+	H					W6,7	T																							H																	T	E5,41	H
+E1,40		E3,43				E1,45																																																																							W77,78		E4,45	T
+			H		H		H		T	W10,11																																				W46,47	H																							T	W71,72	T	E5,40	T				H		H
+								E5,41	H																																				T	E3,39																			W65,66	T					E1,36	H			E2,36	T	E5,40
+											T																																																							H		T		H						H
+										E5,43	H	W12,13			T																													W44,45																	W61,62	T	E5,52	T	E1,43		E5,28		E1,47					H
+												E1,33	T		H	W16,17																									T	E2,51	T	E3,39	H															T	E5,34	H		H				H
+													H	E3,48		E1,40	T		T																				T				H															T
+																			H		T
+																		E2,52			H																T	W38,39		E1,50	H															T			E2,44	H
+																				E1,41		W22,23	T															E4,43	H												W51,52					H	E3,41	H
+																	H					E4,47											T	W34,35	T	W36,37	H															T		T	E2,41
+																									T		T							E1,46		E4,32
+																							H	E1,46	H						T																			T	E2,36
+																												W28,29	T		H		H		H																		E4,44	H
+	W1,2	T		T																						E5,39	H	E3,44	H	E3,28		E4,40																T	W49,50	H		H
+T	E1,35		E4,32	H	E1,46	T	W7,8																																								W47,48	H	E1,36																								T					W78,79	T	E2,45
+		H				H	E3,41	T																																						T	E4,41																								T	E3,38	H		T		T	E3,42	H
+H									W9,10	T	W11,12																																			H																				W66,67				W70,71					H	E3,32	H
+								H	E2,34	H					W15,16																														W45,46																T	E2,51	T	E5,29	T	E2,35	T		T	E3,42	H			E3,42
+											E2,42	T																																T	E2,35																H				H		H	E1,48
+												H	W13,14	T																												T																					H
+													E1,45	H	E4,44	T		T	W19,20		W21,22																				W41,42	H	E2,39	H															T	W60,61									H
+																H		H	E5,41	T		T																T	E5,41	T	E5,32															W56,57			H	E1,36
+																	E3,38				E3,33															T	W37,38	H		H															T	E4,35	T	E3,33
+																				H			W23,24	T													E3,34
+																						H	E3,46	H	W25,26			T			W31,32		W33,34	T	E3,40	H															T	W52,53	T	W54,55	H		H
+																									E4,44	T	E4,42	H	E4,34	T	E4,28	T	E1,37	H																		E1,36	H	E1,40
+																																H																	T	W50,51
+	T		T	W4,5	T																									H																		W48,49		E3,39	H																													T
+	H	E5,38	H	E2,44			T																			H																																																					W79,80	H
+							H																																																																	T						T	E5,40
+E5,35						E4,41																																									T	E3,38	H																							H	W73,74		W75,76	T
+					H				T																																					W46,47	H																										E3,37	T	E4,32	H	E3,37	H
+								E2,39	H																																																									T				T	W71,72
+										W10,11																																			T	E4,35															W61,62	T		T	E3,40	H	W67,68	T		H	E1,35			H
+										E2,41	T	W12,13	T																																H																	H	E1,51	H			E3,25
+											H	E2,31		W14,15	T																												T																									H	E3,44
+														E5,43	H	W16,17			T																				T			W42,43		E3,36																T	E3,31
+													H				T	W18,19	H		T																	W38,39			T	E5,46	H																W59,60
+																E1,39	H	E2,50		E3,38		E1,46	T	W24,25											T		T	E2,41	H	E5,45	H														W55,56	T	E3,38	T	E1,43	H
+																					H				T								T		H	E2,30	H															T		T	E2,39	H		H
+																							H	E3,43	H		T	W28,29				W32,33		E1,45																			E5,39
+																											H	E5,39	T	E2,26	T	E2,38																		T	E5,31	H		H																										W80,0
+	W1,2	T	W3,4	T																						E1,38			H				H																																														T
+T	E5,30		E2,30	H		T	W7,8																								H																W47,48	T	E3,33	H																						W72,73			T	W76,77	T			E4,41
+H		H			E4,42		E3,38	T	W9,10																																																																T			E1,31		E2,40	H
+								H																																								H																							T			E1,41			H
+						H																																								T	E1,40															W62,63			T	W66,67	T			W70,71	H	E2,36	H
+									E4,30	T																																			W45,46	H																	T	W64,65		E3,32									H
+											W11,12	T																																																				E3,26			H
+											E2,40			T																																																			H				T	E1,41
+										H			E3,42	H	W15,16				W19,20																							T	E4,35	T	E1,34																T	E2,49	H					E1,47
+												H			E5,39	T		T																					W39,40		W41,42			H															T
+																H	E2,36	H	E3,38	T		T																T	E1,40	T	E2,30																		H		H								H
+																				H	E2,31														W35,36					H		H													T	W56,57	T			E3,33
+																																				T	W37,38	H																		E4,31	H	E5,28
+																							W23,24	T										T	E3,37		E3,31
+																						H	E2,44	H	W25,26		W27,28	T		T		T				H															T	E1,35	T	E2,38	H
+	T		T																						E4,40	T	E4,38		E5,29	H	E4,24	H	E4,33	H															T	W50,51	H		H
+E5,30	H	E2,36		W4,5	T		T																			H		H																					H	E3,36																										T		T	E1,39	T
+				E1,43	H																																																																		W71,72			T		H
+			H				H	W8,9																																							T	W48,49																								T		H			E5,32	H		H
+						E2,39		E3,36	T		T																																			W46,47		E4,34																T		T	W67,68						E1,36		E4,28
+									H		H																																				H																		E2,38		E1,24	T		T	E5,30	H
+														W14,15																															T	E3,32																T	W63,64	H		H		H
+										E1,40		E1,30	T																														T	E4,32																		H	E3,48							H
+													H	E2,41	T		T	W18,19																					T		T		H		H														W59,60		W61,62								E2,42
+															H	E3,36		E5,45	T																							E3,43																		T
+																			H		T																			E2,43																					E3,28
+																	H			E1,37	H																T	W38,39	H		H															T	E4,34	T	E4,39
+																						W22,23	T												T			E2,39
+																						E3,43	H	W24,25											H	E5,25																T		T	E3,36	H				H
+																								E2,41	T		T		T	W30,31				W34,35																	W51,52			H				H
+T																									H				H	E1,25	T	E5,33	T	E4,41			H													T	E5,26		E3,36
+H		T																								E3,35	H	E1,38			H		H																W49,50			H																											T
+	E2,28			T	W5,6																																																																							W76,77			H	E5,36
+				H																																														H																								W74,75			T	W78,79
+		H	E5,25		E1,41	T	W7,8																																									T																													H	E1,39
+							E2,36	T																																								H	E4,29																							W72,73	T	E3,38	T	E3,28
+						H			W9,10		W11,12																																				W47,48																		T	E1,31	T	W68,69			T	E3,33	H
+																																																															T	W64,65	H										H
+								H	E1,29	T	E1,39	T	W13,14																															T		T	E3,37															W62,63		E3,23			H			W70,71	H
+										H			E3,39	T																													W43,44	H																			H					E1,46	T	E2,39
+														H	W15,16	T		T																											E1,33																								H
+															E5,34	H			W19,20	T	W21,22																					T	E3,32			H															T	E1,48
+												H							E5,33	H																			W39,40	T																	T		T		H
+																	E5,31	H																				T	E4,36	H	E5,25
+																					E3,28	T																H																						E1,32
+																						H	W23,24												W35,36	T						H												W54,55	T	W56,57	H		H
+W0,1																							E4,40	T	W25,26				W29,30	T				T	E1,36	H	E5,26																T	E5,33	H	E5,26		E4,24
+																														H		T
+																									E4,36	T					E3,21	H																			T	W52,53	H
+																								H			W27,28	T	E5,24																							E5,30																											W79,80
+E4,26	T	W2,3		W4,5																						H	E1,37						E2,31	H																W50,51	H																										W77,78	T	E4,35	T
+		E1,35	T	E2,41	T																							H																				W48,49	T	E1,35																												H		H
+	H					E2,37	T																																										H																								W73,74	T		T	E2,30
+			H		H		H																																																										W65,66	T	W67,68					T	E4,32	H	E1,27	H
+								W8,9	T																																																							T	E5,33							H
+								E1,35																																							T	E2,32
+											T																																				H																								W71,72
+									H	E3,37	H		T																															W44,45																			W63,64			H	E1,23	T	W69,70	T	E4,26
+														W14,15	T																														T	E3,29																		H					E1,41
+													H	E1,40	H	W16,17																											T	E1,31	H																	T	E4,44					H		H
+												E5,25					T	W18,19	T	W20,21																		W38,39		W40,41	T		H																		W61,62	H
+																E4,32	H	E3,42			T	W22,23																	T	E5,38	H	E5,38															W57,58			T	E2,26
+																			H	E2,35																																				T		T	W59,60	H
+																						E4,39	T																H															T	E4,32	H	E2,32	H	E2,37
+																					H				T					W30,31	T	W32,33			T	E4,21	T	E2,37														T		H
+																								E5,36	H		T		T	E4,21		E5,28	T				H																E5,31
+T																							H						H		H		H																		W51,52
+H																										E1,34								E5,36	H																																												T	W80,0
+		T		T																								E2,36																						T	E3,23	H																										W78,79	H	E1,35
+	E4,24	H	E3,22	H	E5,36	T	W7,8																				H																						W49,50	H																									T	W76,77	T	E3,36
+						H	E5,31	T			W11,12																																				W47,48	T	E2,27																T	W66,67					T	W72,73	T	E3,35		E3,25	H
+									W9,10	T																																																														E4,29
+									E5,24					T	W15,16																														W45,46	T		H																W64,65	H	E2,29	T		T				H		H
+								H		H		T	W13,14																															T	E5,28		E2,35															W62,63	T	E1,22			H	E3,43	H	E5,34	H
+											E3,36	H	E4,35	H		T	W17,18	T																							W41,42		W43,44	H		H															T	E1,47	H
+															E4,30		E3,28		E2,31	T																				T	E1,24	T	E4,28
+																		H																						H																			T	W60,61	H
+																						T																	W39,40															W54,55	T		T	E2,22	H	E1,31
+																H					E4,24															T		T	E2,34			H													H	E1,25	H
+																				H				T	W25,26				W29,30			T					E5,21	H															T	E5,28
+W0,1																						H	E2,38							T	E1,20	H	W33,34	T	W35,36	H
+				W4,5																				H	E5,31	T	E4,33	T	E2,22				E5,26	H	E3,33																	W52,53	H																										W79,80	T
+E1,25	T	W2,3	T	E3,38	T																							H		H																				W50,51	T	E3,27																										T	E5,30	H
+	H	E1,34	H		H	E2,35	T		T																	H																						W48,49	T	E2,33	H														W65,66							T	E5,27	T		T	E1,29	H
+								E2,33																																							T	E2,30	H																	T	W67,68	T	W69,70					H	E5,22	H
+							H		H	W10,11			T																																T																			T	E2,31		E3,20	H	E5,36	T	E5,21	H
+										E4,33	T	W12,13	H																															W44,45	H		H																			H				H
+											H	E3,22		W14,15	T		T																													E4,25																T	E3,41	H
+														E5,35			H		T																					W40,41	T		T	E2,29															W59,60	T		H
+															H			E3,39	H																								H													T	W57,58	T	E4,33	H	E4,22
+																E2,30					T																T	E5,32	T	E3,35	H	E5,33												T	W55,56	H	E3,29
+																				E1,34		W22,23									T	W32,33	T			W36,37	H		H																E1,31			H
+																					H	E1,38	T		T							E1,27	H	E5,31	T	E2,19																	W53,54	H
+																									H				T
+																							H	E1,35			T		H	E3,18	H				H																	T	E3,28																											W80,0
+T		T		T	W5,6																					E3,31		E1,35																								H																											T	E1,34
+H	E3,21	H			E2,34	T																					H																							T	E4,19																										T	W78,79	H
+			E4,18	H				T																																									W49,50	H																							T		T		H	E4,32
+							E1,30																																									T	E1,26																		T	W68,69	T					E1,34	H	E4,21
+						H		H	W9,10																																																											E1,42			T
+													W13,14																																W45,46			H																	T	E2,27				E3,31	H	E4,25	H
+									E5,19	T		T																																			W47,48																T		H		H
+										H																																				T
+											E5,31	H	E4,31	T																														T		H	E5,30															W62,63		E3,19					H
+														H	W15,16		W17,18	T																									W43,44		E2,26														T	W60,61	T	E1,46	H
+																			W19,20																							T														W56,57	T			E5,26	H
+															E3,27	T	E1,27	H	E4,27	T																		T		T	E3,21	H	E4,24	H													H	E5,17	H
+																H																					W37,38																		T	E5,20
+																					W21,22															T	E2,19	H	E5,29																H
+																					E3,21	T										T	W33,34			H				H														W54,55
+																				H		H			W25,26							H	E4,22	T
+																							E2,36	T					W29,30	T	W31,32			H																			T	E4,24
+																								H	E2,29	T		T	E2,20	H	E4,16				E2,31																	W52,53	H																											T
+E5,20	T	W2,3	T		T																					H	E4,29																							W50,51	T	E4,23																											W79,80	H
+	H	E3,31		E1,37	H																																																																									T	E3,27
+			H																									H																					T	E3,30																								T	W75,76	T	W77,78	H
+						E3,32	T	W8,9																																								W48,49			H															T		T			W71,72	T			E5,17	H	E4,25
+							H	E5,28	T	W10,11																																							H															T	W65,66		E1,19	H		T	E1,20	H	E5,22	H
+									H	E4,29	T	E2,20	T	W14,15																															T	W46,47	T	E5,25																	E4,27	H			E1,35	H
+											H																																			E1,24																T	W63,64	H
+																																																												T	E2,20		E2,39
+													H	E1,34	T		T																									W42,43	T	E4,25	H		H										W57,58	T	W59,60	H		H
+																E3,27		W18,19	T																						T	E5,28																H	E5,28
+															H		H	E3,36																					T		H		H													T	E3,26
+																																					T	W38,39	H																W55,56
+																			H	E5,29	T	W22,23	T									W32,33	T	W34,35		W36,37	H	E4,28		E2,33																H
+																						E5,33	H	W24,25					T		T	E1,26			T																		W53,54	T	E3,28
+																					H			E5,30	T	W26,27	T		H	E3,15	H		H	E3,28	H	E4,15																																												W80,0
+T	E1,20	T		T	W5,6																				H	E2,29	H																									T	E2,26	H																									T	E5,29
+			E5,13	H																								E4,31																						T																											T	W78,79
+		H			E1,33	T																																													E3,16																								T			E5,27
+H								T																																									W49,50	H		H																W68,69			T		T	W74,75	H	E3,18			H
+						H	E2,28		W9,10																																																								T		T	E3,39	T	E2,29		E1,24	H	E4,30			H
+								H	E2,17	T		T																																		T		T	E3,23																	E2,25	H		H		H
+											E3,28	H																																				H												W60,61	T		T	W64,65	H
+										H			W13,14	T																														T	E5,21	H													T	E5,21	H	E3,43		E3,16
+													E5,26		E4,23	T	W17,18	T																							W41,42	T	E3,21	H			E5,25											W58,59	H				H
+																H	E4,23	H	W19,20	T																	W37,38	T	W39,40			H															T	E2,15
+														H					E2,25																				E1,28	T	E2,19															W56,57
+																						T	W23,24									T								H															T		H
+																				H									W29,30	T				T	W35,36	T	E2,17	H																	H	E1,19
+																					E3,18	H	E4,32	T	W25,26	T					E4,12		E4,18		E2,29	H
+	T																							H	E3,26		W27,28					H		H																			T	E3,21
+	H		T	W4,5	T																						E5,24	T	E3,17	H																																																T		T
+E1,19		E4,27	H	E2,35																						H		H																						W50,51	T	E3,20																							W75,76	T
+							T																																												H		H															T	W69,70			T	E5,17	T	E5,12	H	E4,21	H	E1,26	H
+					H	E4,28			T																																								T	E4,26																T	W67,68	H	E5,30	T	E1,19	H		H
+							H	E2,26	H		T	W12,13																																				W48,49	H															T	W65,66		E4,15			H
+										E5,24																																			T	W46,47																		H	E4,23
+																																													H																W61,62	T
+											H	E2,18	T		T																													W44,45		E4,20	T	E4,21												T	E1,19	H	E4,35			H
+													H				T																										T	E3,22			H												W59,60
+																E2,25		W18,19	T																							W42,43	H															T	E4,24	H
+														E5,29	H		H	E4,32																				W38,39	T	E1,32	T	E1,27														T	W57,58
+																			H	W20,21			T								T		T		T	E5,10	T	E4,24	H		H														W55,56		E4,22	H
+																					T	W22,23	H								H				H																					H
+																				E1,28		E1,32		W24,25	T							E1,25		E5,23
+	W1,2																				H			E3,27			T		T	W30,31			H				H																	T	E2,26
+T	E1,19	T	E4,9	T																					H	E1,28		E1,30		E3,12																						T	W53,54	H																						W76,77			T
+																													H																								E4,22																						T		T	W78,79		E3,26
+H		H		H		T																					H																								W51,52																				T	W72,73	T		H	E1,17		E4,23	H
+					E1,32																																															H																W68,69	T		H	E4,20		E2,28			H
+						H	E3,25	T	W9,10																																								W49,50	T	E1,15													W64,65	T		T	E5,34	H				H
+								H	E5,12	T																																			W45,46					H																				E4,25
+										H																																				T		T	E2,21													W62,63				E3,22	H
+												T																																		H															T
+											E1,27																																																		H		T	E2,14	H
+													W13,14																														W43,44	T	E4,17		E5,20												T	W60,61		E3,40	H
+												H	E4,22	T	E4,19	T	E2,21	T																						T		T		H				H												E2,19
+														H				H																		T		T			E1,18	H	E3,18														T	E2,13	H
+																H			W19,20	T			W23,24								W31,32				W35,36			H	E1,27																	W56,57	H
+																			E3,22			T	E4,28	T								T		T	E5,24	H	E4,13			H
+																								H						T	E4,8			H																					T
+																										T				H		H																						W54,55		E2,17
+	T		T																	H	E5,13	H			E1,25	H		T					E1,17																				T	E2,19	H																									T
+	H	E4,23		W4,5																							E4,20		E1,16																																																	T
+E4,15			H																																																																				W71,72	T			W75,76	T		H	E5,21
+				E2,33	T																							H																							T	W52,53	H																W69,70			H		T	E2,10		E3,18			H
+					H	E4,24	T			W10,11																																							T	W50,51		E3,17																T	E2,28	T	E4,15		E2,15	H		H
+							H	E4,22	T																																									E3,23	H															T	W67,68
+										E2,22	T																																			W46,47	T		H												W61,62	T	W63,64	T	W65,66	H	E4,11	H
+									H		H	W12,13																																	T	E2,18	H													T	E3,16		E2,33	H	E3,20					H
+												E3,15	T				T																									W42,43		W44,45	H			E3,18
+														E3,26	T		H	W18,19																									T	E4,18																H		H
+													H		H	E3,22		E2,30	T				T								T				T	W36,37		W38,39	T	E1,31	T	E1,26															W57,58	T	E5,19
+																			H			W22,23	H	W24,25		W26,27				W30,31		W32,33		W34,35	H	E3,7	T	E3,21	H		H		H													T	E2,20	H
+																				E3,25	T	E1,31		E5,22	T						H	E1,24	T	E5,18			H																	T	W55,56	H
+	W1,2	T																							H	E5,23	T		T	E4,8			H																					H	E4,22
+T	E4,15	H	W3,4																		H						H	E2,28																									W53,54																			W72,73					T	W78,79	T	E3,23
+			E2,7	T		T																							H																							T	E5,17																				T		T			E5,18	H
+H				H	E4,28																																													T		H																	T		T	E2,18	H	E2,26		E5,12
+						H	E4,21	T																																											E5,10																T	W68,69	H								H
+										T																																							W49,50	H															T	W66,67	H	E2,32			H				H
+											W11,12																																				W47,48																T	W64,65		E1,21				E3,22
+								H	E5,7																																																				T			E4,10
+																																													W45,46	T		T													H
+										H	E2,25	T					W17,18																											T	E4,13	H	E2,18	H	E2,19											W60,61		E5,35	H		H
+													E3,19	T	W15,16																											T		H															T	E5,14
+														H		T	E2,19	T																								H
+												H			E5,14	H		H																						T
+																			W19,20				W23,24													T		T		H	E4,14		E4,14														T	W58,59	H
+																			E2,20	T		T	E3,25	T							W31,32	T		T	E1,23	H	E3,10	H	E2,25															W54,55		W56,57	H	E5,8
+																				H		H		H	W25,26	T	W27,28			T	E5,3		E5,12	H																					T	E5,12
+	T																				E2,11				E3,22
+	H	W2,3																								H	E2,18	T				H																																														T	E2,19	T
+E5,10		E1,22	T	W4,5	T																							H	E5,11	H																						W52,53	T	E2,17	H														W69,70			T		T		T		H		H
+				E5,28	H	W6,7	T																																												T	E1,16	H																			H	E2,13	H			E5,13
+			H			E4,20																																												W50,51																	W67,68	T		T	W71,72				E3,7	H
+							H	W8,9	T																																							W48,49			H										W61,62			T		T	E2,9	H	E1,27	H	E5,10
+								E3,19																																							T	E5,13	T
+										W10,11	T																																				H			E1,22													W63,64	H
+									H	E5,17																																			T	W46,47
+											H	E1,14	T	W14,15		W16,17	T	W18,19																								W42,43		W44,45	H	E3,15			H											T	E4,12	T	E4,29		E2,18	H
+														E5,21	T																												T	E4,14																H		H
+													H		H	E3,19	H																				T			W40,41	T	E5,21	H															T	W59,60
+																																							T																				E5,14
+																		E3,27	T				T	W24,25									T		T	E1,6		E5,16	H	E4,27	H															T	W57,58	H
+																			H	W20,21	T	W22,23	H	E1,21	T						T			E2,16	H		H																			H	E4,16
+	W1,2																			E5,20	H	E1,30			H	W26,27			T	W30,31	H	E5,19	H																						W55,56																								T
+T	E1,14	T		T	W5,6																					E4,19	T	E3,25	H	E3,5																						T	W53,54	T	E2,20																	W72,73						W78,79	H	E3,20
+		H	E4,3	H																							H																										E3,14																				T	W74,75	T		T	E4,14
+H					E4,24	T																																														H		H															T	W70,71	T	E3,15		E5,21	H	E5,7
+							W7,8	T																																											W51,52																T	E4,28		E4,18			H				H
+						H	E5,16	H	E5,2	T																																				T	W47,48	T		T	E1,9													W64,65					H
+										H																																					E3,15	H															T		T	W66,67					H
+											W11,12	T																																	W45,46	H			E5,14												T		H	E2,8		E2,19	H
+											E3,22	H		T	E4,10	T																											W43,44	T	E3,10					H										W60,61		E1,34
+													E5,14			H	W17,18																			T			W39,40	T	E4,10	T	E3,11	H															T	E4,10	H				H
+														H			E1,18	T																				T	E3,22	H																	T	W58,59	H
+																			W19,20		W21,22	T	W23,24	T										T	E5,18	H	E4,6	H				H														W56,57	H	E4,4
+																		H	E5,15	T	E3,8		E1,24		W25,26							T		H
+																				H				H	E1,21	T				T	E1,2		E4,8
+	T																					H				H			W29,30	H																									T	E1,11																							W79,80	T
+	H	W2,3	T																								E3,15	T	E2,9			H																					T		H																							T	E5,14
+		E3,19	H	W4,5	T																																															W52,53	H	E5,12																						T		H
+E4,6				E2,26	H																							H																																										T		T	E1,12	T	E5,2		E2,11			H
+							T																																																													T		H
+						E1,19	H	W8,9	T	W10,11																																									T	E2,14																	E5,22			H
+								E2,17																																						W46,47	T	W48,49	T		H												W63,64	T		T	E2,7	H			E2,8			H		H
+									H	E2,15	T	W12,13																																	T			E1,12		E2,20
+											H		T		T																															E5,10																T	E1,28
+												E5,9	H																															W44,45	H		H		H											T	E5,7			H	E1,17	H
+															H	W16,17																									T		T	E2,12																H
+														E5,16		E5,14	T																						T	W40,41	H		H															T				H
+																		W18,19	T				T												T	E4,2	T	E5,11	H	E3,24		E5,16															W57,58	H	E4,10
+																	H	E5,22	H	E2,18	T			W24,25							T		T	W34,35	H		H
+	W1,2																				H	E3,27	H	E5,16	T	W26,27			T	W30,31	H		H	E2,14																						T	E4,12
+		T																							H	E1,18	T			E3,2		E5,14																					W53,54	T	W55,56	H																						W78,79	T
+			E3,0	T																																																			E4,16
+T	E3,11			H																								E4,21	H																																												T		T				H	E4,16
+H		H			W5,6	T	W7,8																				H																									T	E2,12	H																W70,71					H		T	E1,13
+					E4,20																																																																T			W72,73				E2,5
+						H	E1,15	T		T																																						T		T	W51,52	H															T	E4,24	H	E3,15	T	E4,11	H	E4,17			H
+								H	E1,1		W11,12	T																																		T				H	E2,7												T				H				H
+											E5,17	H	W13,14																																W45,46		E4,11	H															H	W64,65	T	W66,67
+										H			E5,9	T	W15,16	T																									W41,42		W43,44	T	E1,9	H			E3,11											W60,61	T	E4,30		E3,5	H	E4,15
+														H	E1,9																							T	W39,40	T																			T	E2,8	H
+																H		T		T																T			E2,20		E3,7	T	E5,6	H														W58,59	H
+																	E1,17	H	E5,10	H				T										T	W35,36		E2,4	H		H
+																					E4,4	T	E3,21	H	W25,26					T	W31,32		W33,34		E1,17	H						H														W56,57	T	E4,0
+																									E2,19	T					E2,0	T	E5,3	H																					T	E3,8	H
+																																																							H
+...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
+	T			W4,5																		H						T	W29,30	H
+		E5,14																									E1,14		E1,8																																														W75,76			T	W79,80	T
+E5,1				E4,22	T																					H		H				H																					T	E4,8																									E1,13
+	H					W6,7																																															H																W69,70	T		T				T
+						E3,16	T																																													W52,53																T	E4,18	H			E4,8	T	E2,0	H	E4,7	H		H
+							H		T
+					H			E3,14	H		T	W12,13																																			T	W48,49		W50,51	T	E4,10											W63,64			T	W67,68	H			E5,3	H		H
+										E2,13																																						E5,7	T	E5,15	H													T	E2,15		E2,5
+																																													T	W46,47			H													T	E3,25			H
+											H	E1,8	T		T																															E4,6
+													H	E3,13	H	W16,17	T		T																				T		T		T	E2,10	H		H												W59,60	T	E4,3	H		H
+																E2,12		E1,21		W20,21															T		T	E1,10	H	E5,19			H
+																	H			E1,17	T		T	W24,25												E2,0	H				H	E3,13																		H
+...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
+																																	T																								W57,58		E1,9
+...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
+																			H		H		H		T								H	E1,13	H																				W55,56	T	E5,7
+																								E3,13	H				T	W30,31
+T		T																				E3,24				E5,13	T		H	E2,0		E4,10																						T	E5,11
+		H		T																							H	E3,18																									W53,54	H		H																							T
+	E5,6			H																																																																		W70,71
+...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...
+H						T	W7,8																																																																		T			W76,77	T			E4,12
+					E4,16		E2,13	T	W9,10																																																												T				H			E3,2		E3,10	H
+								H																																																															T	W72,73
+						H																																												T		T	E3,9														T	W68,69	H	E4,11		E4,7		E3,14			H
+																																																T																	T	W66,67		E2,22
+									E1,0	T	W11,12	T	W13,14																																	T			E5,6	H	E5,2	H											T			E2,13	H				H
+											E1,16		E5,4	T	W15,16																													T	W45,46	H	E2,9	H													T	E5,25		E4,1	H
+										H				H		T																							W39,40				W43,44		E2,7																		H
+												H			E4,5	H		T		T																	W37,38	T		T
+																	E5,12	H		H																			E2,18					H																W60,61	H
+...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
+																																					E3,1			H	W41,42	T	E4,2
+																			E5,5		W21,22		W23,24		W25,26								W33,34	T	E1,16			H			E5,2																T		T	E1,7
+																																		H
+...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
+																					E2,2	T	E4,17	T	E3,16	T			W29,30			T	E3,0									H
+		W2,3		W4,5																		H		H			W27,28	T	E3,5																									W54,55	T		H		H
+W0,1	T	E5,9																								H	E5,9																												H	E4,4																								T
+E1,0	H			E2,20	T		T	W8,9																				H				H																																					W69,70			T	W73,74			T	E1,6	T	E5,8	H
+					H	E1,15																																															T	E4,4														T		T			E3,5	T		H		H
+							H																																																														E4,14	H
+...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
+								E3,11																																											T	W52,53	H													T					E3,0			H
+																																																	T	W50,51	H	E3,7														H						H
+											T																																			W46,47	T	W48,49		E4,11																	E1,4	H
+													T																																			E3,4														T		T	W65,66
+										E2,11				W14,15	T	W16,17																													T	E3,3	H		H														E4,21		E3,12
+											H	E4,4	H	E4,9	H	E3,9	T	W18,19		W20,21																	T		T	W40,41				W44,45	H															T	W61,62	H		H
+																			T																			E1,9	H				T	E2,8																	E3,0
+																		E1,20																W34,35	T		H			E5,14	T		H																	H
+																	H			E1,16	T		T												H						H	E1,12
+																					H				T
+...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
+																			H			E3,21	H	E2,11			T							E2,11																						T	W57,58		E5,4
+																													T																										W55,56		E5,2
+F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
+	E2,4	T		T	W5,6	T																			H	E1,12	H	E2,16	H			E1,9																								H																	T				T		T	E5,7
+		H		H	E1,15		W7,8																																															T	E1,10															W70,71						E2,0		E4,6
+...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...
+						H	E5,8	T																																													W53,54													W66,67			T	E4,7			H				H		H
+								H																																										T	W51,52	T	E1,8	H															H			E4,3		E1,13
+																																															W47,48	T	E2,4	H	E2,0	H											T		T	E5,8	T	E2,20
+										T		T	W13,14																																	T	E3,6	H															H		H		H
+										H	E1,15		E4,0	T	W15,16	T																													W45,46																	W62,63
+														H	E1,4																								W39,40																									E1,0
+...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
+												H																															W43,44	T	E5,2	H														W60,61		E5,20
+																H		T																			W37,38	T						H
+																	E4,8	H																	W35,36		E1,0		E2,16	T		T	E2,0
+																				T														T	E2,14			H		H	E2,0
+																					W21,22	T	W23,24											H																									T	E4,3
+	T																		E5,0	H	E2,0		E4,13	T	E4,12	T		T				T										H														W56,57	T		H
+	H				T																	H		H			E3,6																														H																							T
+...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...
+		E1,8		E5,15			T																			H			E3,2			H																							T	E4,0																						T
+						E1,14	H	E1,10																				H																											H														W69,70	T		T	W73,74	T			E5,1	H	E1,7	H
+					H																																																	W54,55																H		H	E1,4
+...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
+																																																	T	W50,51		E3,4	T	E4,0														T	E2,12					H
+																																															T	E2,2		E4,7			H										W63,64			T	E4,0	H
+...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
+										W10,11	T																																				H		H																W65,66
+										E5,6					T
+															H																																																			H
+...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
+												E3,1		E3,6		W16,17																												W44,45	T	W46,47																T	E2,19		E5,7
+																																														E1,2
+...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
+																																							T
+											H							W18,19																					H																							H
+...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
+																																								W40,41				E2,6
+...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
+																E3,6	T																	E5,6	T			E4,5		E4,10					H
+...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
+																	H																																										W59,60	T
+																																																											E4,0
+...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
+																		E2,18				E1,20	T	W24,25																		E4,8
+	W1,2																			E1,15			H	E1,10	T		T								H																						W57,58			H
+	E1,3	T		T																					H	E5,7			T			E3,6
+...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
+						T	W7,8	T																			H	E2,14	H																										W55,56		E2,0																				T		T
+		H		H	E5,10	H	E3,5																																																															W70,71		E1,2	T				H	E4,2		E1,6
+...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
+								H																																										T		T			E1,9														T	E3,4				E3,10					H
+...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...
+										T																																					W47,48	T	E1,3				E3,5												T	E1,7		E1,19	H				H
+										H	E2,13	T		T	W15,16																								W39,40					T		T	E2,4	H				H										E4,16	T		H
+														H																										T						H				H
+															E2,2	T																		T				T	E1,15	H					E2,0
+...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
+												H				H	W17,18	T																								T		H																			H
+																	E3,5					T	W23,24											H
+																						H		T
+	T																			T			E1,12	H	W25,26										E5,9			H				H																		E3,0
+																				H					E3,9	T						T
+...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
+	H																										W27,28	T	W29,30
+																		H									E3,3		E2,0			H																																													W77,78	T
+				W4,5	T																																																																								E1,0
+		E5,3		E4,11		E2,12	T																			H		H																											T																									T
+																																																																								T		T						H
+					H		H	E2,8																																									T				T												W65,66			T	E4,8	T		H	E2,2	H				H	E3,4
+										W10,11	T																																						H			E3,1	H		H							T			E2,5	T		H		H
+										E4,2	H			W14,15																									T	E3,7						W46,47	T	E2,0		E3,4												H
+...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
+														E4,2	T	W16,17	T																						H							E2,0	H																			H
+												E1,0			H	E5,1	H																	W34,35										E2,4																			E2,17
+...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
+																						W22,23		W24,25										E5,1	T							E5,3
+																				E2,13		E1,19	T	E1,9	T										H			E5,0
+...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
+	W1,2																	E5,13									T					E3,3
+...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...
+	E3,0	T		T		T																			H
+						H		T															H			E3,4	H	E2,12																																												W72,73							T	W80,0
+				H	E5,5		E1,4	H																																													W53,54																T	E2,2			T	W74,75				E1,1		E2,4
+		H								T	W11,12																																						W49,50			T	E3,2		E5,4										T			E3,16	H			E2,0		E4,6					H
+...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
+																																																		T												W62,63
+																																																	E3,0	H
+...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
+																																								T
+														T																									W39,40	H							E1,3					H										E5,11	T		H	E4,3							H
+										H				H
+...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
+											E4,9				E2,0	T																												T
+																H	W17,18																	T																													H
+...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
+																		T		T		T												H	E3,6				E2,13			T
+																	E4,1			H				T
+																								H								T
+...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
+						W6,7																			W25,26	T	W27,28	T														H		H
+				W4,5	T	E5,7	T															H	E1,11		E2,7		E3,0					H																																																T
+				E2,9														H																																																				T								T
+		E1,2																								H																																																T				H
+...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...
+								E3,5																				H																									T		T													T											E1,3	H
+...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
+					H		H																																	W40,41							T			E1,3			H												W65,66	T			E1,7	H			E2,0
+										W10,11				W14,15																																						E1,0										T			E5,0	H								H
+...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
+										E2,0	T			E1,1		W16,17																		W34,35	T				T	E4,3							H								H								E1,16					H
+																E1,0	T			E3,10				W24,25										E1,0
+																	H																									E1,2		E1,3																		H
+...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
+																							T
+		T		T		T					H							E5,8				E3,16	H	E1,8	T							E3,0			H				H
+																									H	E1,3																																																				W78,79	T	W80,0
+		H		H		H	E4,0	T																				E2,10																						T																												E1,0	H	E4,0
+...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...
+					E5,0																																																W53,54																T	E2,0
+...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
+...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
+																																																		H			E1,1													E1,2								E4,2
+...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
+								H						T																																	E1,2								E4,0								T					E5,11	H
+...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
+																																								T
+...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
+																	W17,18			T				T																		T		T																		E3,8
+...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
+											E2,7			H								T	W23,24	H															E2,11	H																							H
+																	E1,0	T		H			E4,7		W25,26	T									E3,3									H
+																		H							E2,5	H																H
+...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F
+...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...
+																												T																																																			E2,1
+...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
+		E2,0				W6,7
+...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
+				E1,8		E3,4																H
+...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...
+								E1,4																																										E3,0			T													T								T
+...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
+																												H											T								T						H									T						T	E1,6
+											T			E1,0									T																	E1,2																						H	E5,11			H		H						H
+											H													W24,25																				E1,2
+...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
+																									T	W26,27									T												H
+																		E3,5		E2,8				E2,6	H	E1,2													H			E2,0
+...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
+				T		T																E4,12	H																																																								T
+...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
+								T																				E2,8																									E1,0																T
+								H																											H					T																						W62,63				E2,0		E4,7
+...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
+				H		H					E4,3													T	E1,4	T														H				T			E1,1															E4,4	T											E2,0					H
+...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
+																				T																			E2,9																								H
+																		T		H		T	W23,24																																														H
+																							E5,2
+...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
+																		H								H		T							E3,0
+...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...
+						E2,2		E4,0																																				H																								T
+...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...
+											T													H																W40,41							T															T
+				E3,5																		H			T			H											T	E2,0																						H	E2,9					H											E1,0
+																				E1,7																			H																														E5,1
+...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
+																							T			E2,0																					H
+...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
+						T					H							E2,3					H																					E1,1
+...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...
+																								E5,1	H																																					W62,63
+...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
+				T																		E4,8						E2,6																																		E4,0	T					W68,69
+																				T																			E5,4																								H
+...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
+				H		H					E2,1												W23,24																								E1,0																					E5,2	T
+																		T						T	W25,26																			T																									H
+																				H		T	E2,0		E2,2
+...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
+																												T											T																								E5,4
+...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
+				E4,1		E2,0					T							H		E4,3					T														H					H																								T	E1,0
+...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
+																		E3,0				H		H				H											E4,0																								T
+...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...
+...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
+				T							H									T																								E1,0																								H
+...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
+...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
+																						E2,6		E1,0	H			E2,4
+...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
+											E1,0																																																				H					E2,0
+...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
+																						T
+...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...
+																												T
+...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
+				H																H		H			E2,0																																						E4,0
+...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
+...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
+				E1,0																E3,0		E3,3
+...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
+...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
+																						T
+																						H						H
+																												E4,0
+...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
+																						E3,0
+...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
+***********************
+Philosophers terminated

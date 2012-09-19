@@ -1,0 +1,27 @@
+CLASS
+
+time ./a.out
+user	0m0.100s
+
+with -O2
+user	0m0.020s
+
+COROUTINE
+
+time ./a.out
+user	0m0.690s
+
+with -O2
+user	0m0.400s
+
+TASK 
+time ./a.out
+user	0m2.180s
+
+-O2
+user	0m2.160s
+
+
+Class has no thread blocking or contexting switching, while coroutines allow for context switch as you move from one routine to another (each routine has its own stack),
+TASK allow for not only context but also, thread blocking. Also, you do not have control over which task runs when (unless using locks).-O2 is faster for class
+vs task because the task being done is non optimizable by TASK, since its going to yield the approximately the same amount of time no matter the optimization.

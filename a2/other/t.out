@@ -1,0 +1,10 @@
+0(skip) 1(skip) 2(skip) 3(send 1, to 17) 4(for 17, 1) 5(for 17, 1) 6(for 17, 1) 7(for 17, 1) 8(for 17, 1) 9(for 17, 1) 10(for 17, 1) 11(for 17, 1) 12(for 17, 1) 13(for 17, 1) 14(for 17, 1) 15(for 17, 1) 16(for 17, 1) 17(fail 0, part 1) 17(elec 17?1 17?2 17?3 17?4 17?5 17?6 17?7 17?8 17?9 17?10 17?11 17>12 17?13 17?14 17?15 17?16 win 17) 17(rec 1, from 3) 1(ack 3) 2(ack 3) 3(ack)
+4(send 2, to 2) 5(for 2, 2) 6(for 2, 2) 7(for 2, 2) 8(for 2, 2) 9(for 2, 2) 10(for 2, 2) 11(fail 12, part 13) 11(for 2, 2) 13(for 2, 2) 14(for 2, 2) 15(for 2, 2) 16(for 2, 2) 17(for 2, 2) 1(for 2, 2) 2(rec 2, from 4) 3(ack 4) 4(ack)
+5(send 3, to 9) 6(for 9, 3) 7(for 9, 3) 8(for 9, 3) 9(rec 3, from 5) 10(ack 5) 11(ack 5) 13(ack 5) 14(ack 5) 15(ack 5) 16(ack 5) 17(ack 5) 1(ack 5) 2(ack 5) 3(ack 5) 4(ack 5) 5(ack)
+6(send 4, to 6) 7(for 6, 4) 8(fail 9, part 10) 8(for 6, 4) 10(for 6, 4) 11(for 6, 4) 13(for 6, 4) 14(for 6, 4) 15(for 6, 4) 16(for 6, 4) 17(for 6, 4) 1(fail 2, part 3) 1(for 6, 4) 3(for 6, 4) 4(for 6, 4) 5(for 6, 4) 6(rec 4, from 6) 7(fail 8, part 10) 7(ack 6) 10(ack 6) 11(ack 6) 13(ack 6) 14(ack 6) 15(fail 16, part 17) 15(ack 6) 17(ack 6) 1(ack 6) 3(ack 6) 4(ack 6) 5(ack 6) 6(ack)
+7(fail 10, part 11) 7(send 5, to 14) 11(for 14, 5) 13(fail 14, part 15) 13(drop Data) 13(nack 7) 15(nack 7) 17(nack 7) 1(nack 7) 3(nack 7) 4(nack 7) 5(nack 7) 6(nack 7) 7(fail 11, part 13) 7(nack)
+13(send 6, to 7) 15(for 7, 6) 17(for 7, 6) 1(for 7, 6) 3(for 7, 6) 4(for 7, 6) 5(for 7, 6) 6(for 7, 6) 7(rec 6, from 13) 13(ack)
+15(fail 17, part 1) 15(elec 15?1 15?3 15?4 15?5 15>6 15?7 15?13 win 15) 15(skip) 1(send 7, to 13) 3(for 13, 7) 4(for 13, 7) 5(fail 6, part 7) 5(for 13, 7) 7(for 13, 7) 13(rec 7, from 1) 15(ack 1) 1(ack)
+3(skip) 4(skip) 5(fail 7, part 13) 5(skip) 13(skip) 15(send 8, to 15) 1(fail 3, part 4) 1(for 15, 8) 4(for 15, 8) 5(for 15, 8) 13(for 15, 8) 15(rec 8, from 15) 1(ack 15) 4(ack 15) 5(ack 15) 13(ack 15) 15(ack)
+1(skip) 4(fail 5, part 13) 4(send 9, to 13) 13(fail 15, part 1) 13(elec 13?1 13>4 win 13) 13(rec 9, from 4) 1(fail 4, part 13) 1(drop Ack)
+1(skip) 13(fail 1, part 13) 13(send 10, to 13) no more partners

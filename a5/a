@@ -1,0 +1,64 @@
+56083
+Phil0	Phil1	Phil2
+******	******	******
+H	H
+	E2,28	H
+	T	W2,0
+W0,1		E3,27
+E5,25		T
+T
+H
+E3,22	H
+T	W1,2	H
+	E5,23
+	T	E5,22
+H		T
+E5,17
+T
+H
+E4,13
+T	H	H
+	E2,21
+H	T
+E3,10
+T		E4,18
+	H	T
+	E4,17
+H	T
+E3,7	H
+T	E3,14	H
+	T	E2,16
+	H
+	W1,2	T
+	E5,9
+	T
+H	H
+E2,5	W1,2
+T	E5,4
+H	T	H
+E3,2
+T		E5,11
+	H	T
+	E3,1
+H	T
+E2,0	H
+F	...	...
+	E1,0
+...	F	...
+		H
+		E3,8
+		T
+		H
+		E1,7
+		T
+		H
+		E5,2
+		T
+		H
+		E1,1
+		T
+		H
+		E1,0
+...	...	F
+***********************
+Philosophers terminated

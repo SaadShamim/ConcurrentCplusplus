@@ -1,0 +1,38 @@
+i.
+input string:
+31777111
+
+Depth: 1
+real	0m10.675s
+user	0m10.640s
+
+Depth: 2
+real	0m5.812s
+user	0m10.570s
+
+Depth: 4
+real	0m3.493s
+user	0m10.690s
+
+Depth: 8
+real	0m2.408s
+user	0m10.740s
+sys	0m0.110s
+
+Depth: 16
+real	0m1.931s
+user	0m11.460s
+sys	0m0.110s
+
+Depth: 32
+real	0m1.673s
+user	0m12.750s
+
+Depth: 64
+real	0m2.520s
+user	0m45.800s
+
+ii.
+Depth 32 was the most efficient, in terms of real time. And depth one was the slowest, since there it has the fewest process. As the depths increase the real time decreases (until hitting 32) after which time real time increases subtly, however, has the number of threads ramp up (depth) although the real time is decrease the user time increases after depth 16, and grows exponentially at depth 64. This is because the number of threads created exceed the number of cpus.
+
+iii. The program is esentially creating multiple threads to handle the computation rather then recursing in place. Therefore, the time increases as more threads increase, however, once the number of threads exceed the number of processors on the computer, the threads begin to slow and the time for cpu increaes. This is most likely due to a processor dealing with multiple threads withing one process.

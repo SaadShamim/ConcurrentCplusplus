@@ -1,0 +1,521 @@
+TYPE = INT
+
+
+1) ./phil 5 20 56083
+56083
+Phil0	Phil1	Phil2	Phil3	Phil4
+******	******	******	******	******
+H	H
+	E2,18	H
+		W2,3	H
+E1,19	T		E3,17	H
+T		E2,18	T
+		T	H	E4,16
+		H	W3,4	T
+			E2,15
+		E5,13	T
+	H	T	H
+H	E1,17	H	E2,13
+	T		T
+E1,18	H	E1,12	H
+		T	E4,9
+T	E5,12	H	T
+		W2,3		H
+	T	E2,10		E3,13
+	H	T	H	T
+	E1,11		E2,7	H
+H			T	W4,0
+W0,1	T	H		E5,8
+E3,15		E4,6		T
+T
+H		T	H
+E2,13	H		E2,5	H
+T	W1,2
+	E3,8		T	W4,0
+H			H	E2,6
+W0,1	T	H	W3,4	T
+E5,8			E1,4
+T		E5,1	T
+		T	H
+			E3,1
+	H		T
+H	E5,3	H		H
+	T	E1,0
+...	...	F	...	...
+				E4,2
+E2,6				T
+T
+H
+E2,4
+T			H	H
+			E1,0
+...	...	...	F	...
+	H			E2,0
+...	...	...	...	F
+	E3,0
+...	F	...	...	...
+H
+E2,2
+T
+H
+E2,0
+F	...	...	...	...
+***********************
+Philosophers terminated
+
+- diffing matched his exact output:
+- no dead locks
+- eating only when adjacent nodes are not eating
+- Eating right number of noodles
+- Right order of execution (per thread)
+- traced through program, they follow they right pattern
+
+2) ./phil 5 20 56083
+exact same output as before => seed working
+
+3) check with 3
+./phil 3 20 56083
+56083
+Phil0	Phil1	Phil2
+******	******	******
+H	H
+	E2,18	H
+	T	W2,0
+W0,1		E3,17
+E5,15		T
+T
+H
+E3,12	H
+T	W1,2	H
+	E5,13
+	T	E5,12
+H		T
+E5,7
+T
+H
+E4,3
+T	H	H
+	E2,11
+H	T
+E3,0
+F	...	...
+	H	E1,11
+	E2,9	T
+	T	H
+		E1,10
+	H	T
+	E5,4
+	T	H
+	H	E2,8
+	E3,1	T
+	T	H
+		E1,7
+	H	T
+	E1,0
+...	F	...
+		H
+		E5,2
+		T
+		H
+		E2,0
+...	...	F
+***********************
+Philosophers terminated
+
+- no dead locks
+- ordering is fine
+
+4)
+./phil 3 30 56083 
+56083
+Phil0	Phil1	Phil2
+******	******	******
+H	H
+	E2,28	H
+	T	W2,0
+W0,1		E3,27
+E5,25		T
+T
+H
+E3,22	H
+T	W1,2	H
+	E5,23
+	T	E5,22
+H		T
+E5,17
+T
+H
+E4,13
+T	H	H
+	E2,21
+H	T
+E3,10
+T		E4,18
+	H	T
+	E4,17
+H	T
+E3,7	H
+T	E3,14	H
+	T	E2,16
+	H
+	W1,2	T
+	E5,9
+	T
+H	H
+E2,5	W1,2
+T	E5,4
+H	T	H
+E3,2
+T		E5,11
+	H	T
+	E3,1
+H	T
+E2,0	H
+F	...	...
+	E1,0
+...	F	...
+		H
+		E3,8
+		T
+		H
+		E1,7
+		T
+		H
+		E5,2
+		T
+		H
+		E1,1
+		T
+		H
+		E1,0
+...	...	F
+***********************
+Philosophers terminated
+
+- ordering looks good
+- no dead locks
+- matches his output
+
+------------------------------------------------------------------------------------------
+
+TESTING TYPE = AUTO
+
+1) testing given values from asm
+./phil 5 20 56083
+56083
+Phil0	Phil1	Phil2	Phil3	Phil4
+******	******	******	******	******
+H	H
+	E2,18	H
+		W2,3	H
+E1,19	T		E3,17	H
+T		E3,17	T	W4,0
+		T		E1,19
+	H	H		T
+	W1,2	E2,15
+	E5,13	T
+H	T		H
+			E5,12
+	H	H	T
+W0,1	E2,11	W2,3
+	T
+E1,18	H	E3,12		H
+T	W1,2			W4,0
+H	E5,6	T	H	E4,15
+W0,1	T		E3,9	T
+E2,16			T
+T	H
+H	E5,1
+E2,14	T	H
+T		E4,8	H
+H		T		H
+E3,11			E5,4	W4,0
+T			T	E3,12
+	H	H		T
+		E4,4
+	E1,0	T		H
+...	F	...	...	...
+		H
+		E4,0
+...	...	F	...	...
+			H	E1,11
+			E4,0	T
+...	...	...	F	...
+H
+E5,6
+T				H
+				E4,7
+H				T
+E2,4
+T				H
+				E4,3
+H				T
+E4,0
+F	...	...	...	...
+				H
+				E3,0
+...	...	...	...	F
+***********************
+Philosophers terminated
+
+- no dead locks
+- eating only when adjacent nodes are not eating
+- Eating right number of noodles
+- Right order of execution (per thread)
+- traced through program, they follow they right pattern
+
+3) test with 3 phil
+./phil 3 20 56083
+
+-valid output, removed due to size limit
+- no dead locks
+- right ordering
+
+3) using 2 phil
+./phil 2 20 56083
+
+  - valid output removed due to size limit
+- no dead locks
+- eating order is valid
+
+------------------------------------------------------------------------------------------
+
+TESTING TASK:
+
+
+1) Testing given values 
+./phil 5 20 56083
+56083
+Phil0	Phil1	Phil2	Phil3	Phil4
+******	******	******	******	******
+H	H	H	H	H
+W0,1	E1,19	W2,3	W3,4	E3,17
+E3,17	T	E1,19		T
+T		T	E1,19
+H	H		T
+W0,1	E2,17			H
+E5,12	T	H
+		E4,15	H	W4,0
+T	H	T	W3,4	E3,14
+	E3,14	H
+H	T	W2,3	E1,18	T
+E1,11	H			H
+T	W1,2	E5,10	T	W4,0
+	E2,12	T		E3,11
+	T	H	H	T
+H		E1,9	W3,4	H
+W0,1	H	T		E2,9
+				T
+E3,8	W1,2	H	E3,15	H
+T	E4,8	W2,3	T	W4,0
+	T	E4,5		E3,6
+H	H		H	T
+E5,3	W1,2	T	W3,4	H
+T	E5,3		E2,13	W4,0
+		H	T	E1,5
+H	T	W2,3
+W0,1	H	E5,0		T
+E2,1	W1,2		H	H
+			W3,4
+...	...	F	...	...
+T	E3,0		E3,10	W4,0
+			T	E4,1
+...	F	...	...	...
+H				T
+E1,0
+F	...	...	...	...
+			H	H
+			W3,4	E1,0
+...	...	...	...	F
+			E1,9
+			T
+			H
+			E2,7
+			T
+			H
+			E5,2
+			T
+			H
+			E2,0
+...	...	...	F	...
+***********************
+Philosophers terminated
+
+- no dead locks
+- eating only when adjacent nodes are not eating
+- Eating right number of noodles
+- Right order of execution (per thread)
+- traced through program, they follow they right pattern
+
+3) test 2 phil:
+./phil 2 20 56083
+-ran correctly (removed to file line limit)
+- no dead look
+- follows pattern
+
+4) testing 3 phil:
+valid output (removed due to file size limit)
+
+5) testing bad inputs for q2driver
+./phil 3 20 -56083
+Usage: ./phil [ philosophers (> 1) [ noodles (> 0) [ Seed (> 0) ] ] ]
+
+./phil 3 0 56083
+Usage: ./phil [ philosophers (> 1) [ noodles (> 0) [ Seed (> 0) ] ] ]
+
+./phil 1 2 56083
+Usage: ./phil [ philosophers (> 1) [ noodles (> 0) [ Seed (> 0) ] ] ]
+
+------------------------------------------------------------------------------------------
+
+TESTING JAVA EXECUTION
+
+1) default values:
+java q2Driver
+2091
+Phil0	Phil1	Phil2	Phil3	Phil4
+******	******	******	******	******				
+H			H	H
+		H		E4,26
+				T
+	H			H
+	E4,26		E3,27
+E2,28	T			W4,0
+T		E1,29	T	E5,21
+H		T	H	T
+		H		H
+W0,1		E3,26	W3,4	E3,18
+E2,26	H	T		T
+T	W1,2			H
+H			E5,22
+	E4,22		T	E5,13
+E3,23	T			T
+T	H
+	E5,17
+H	T		H
+E1,22	H		E3,19
+T	W1,2		T
+	E4,13	H		H
+	T	E4,22		E3,10
+		T
+		H		T
+	H	E4,18
+H	E1,12	T
+W0,1	T
+	H
+E3,19	W1,2		H
+T
+H	E1,11
+	T	H
+		W2,3	E2,17
+E2,17		E2,16	T
+T		T		H
+H				E3,7
+W0,1				T
+E4,13
+T	H	H	H
+		W2,3	E2,15
+		E5,11	T	H
+	E3,8	T		E4,3
+		H	H	T
+	T	W2,3
+		E2,9
+H		T	E2,13
+E1,12	H		T
+T	E4,4			H
+	T			E3,0
+...	...	...	...	F
+	H		H
+			E3,10
+	E4,0		T
+...	F	...	...	...
+		H
+		E4,5
+H		T
+E3,9
+T		H	H
+			E3,7
+H		E2,3	T
+E4,5
+T		T	H
+		H	E1,6
+		E2,1	T
+H		T	H
+E3,2			E4,2
+T		H	T
+		E1,0
+...	...	F	...	...
+			H
+			E2,0
+...	...	...	F	...
+H
+E1,1
+T
+H
+E1,0
+F	...	...	...	...
+***********************
+Philosophers terminated
+
+- no dead locks
+- eating only when adjacent nodes are not eating
+- Eating right number of noodles
+- Right order of execution (per thread)
+- traced through program, they follow they right pattern
+
+2) test with 2 phil:
+java q2Driver 2 20 56083
+output was valid
+
+- no dead locks
+- follow right ordering
+
+3) test with 3 phil
+ java q2Driver 3 11 56083
+56083
+Phil0	Phil1	Phil2
+******	******	******		
+H	H
+E1,10		H
+T	E1,10
+	T	E3,8
+		T
+	H	H
+	W1,2	E3,5
+	E5,5	T
+	T	H
+H		E2,3
+E2,8		T
+	H	H
+T	W1,2	W2,0
+H	E4,1
+W0,1	T	E1,2
+E2,6		T
+T		H
+		E1,1
+	H	T
+	E1,0
+...	F	...
+H
+E1,5		H
+T		W2,0
+		E1,0
+...	...	F
+H
+E5,0
+F	...	...
+***********************
+Philosophers terminated
+
+- no deadlocks
+- ordering is valid
+
+4) incorrect input
+java q2Driver 1 11 56083
+Usage: java q2Driver [ philosophers (> 1) [ noodles (> 0) [ Seed (> 0) ] ] ]
+java q2Driver 2 0 56083
+Usage: java q2Driver [ philosophers (> 1) [ noodles (> 0) [ Seed (> 0) ] ] ]
+java q2Driver 2 2 -1
+Usage: java q2Driver [ philosophers (> 1) [ noodles (> 0) [ Seed (> 0) ] ] ]
+
+throws usage error

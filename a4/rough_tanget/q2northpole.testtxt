@@ -1,0 +1,268 @@
+Test Cases
+
+wrong inputs:
+
+1) condition check: N>0
+
+$ ./northpole 0
+Usage: ./northpole [ N (>= 0) [ E (>= 0) [ seed (> 0) [ C (> 0) [ D (> 0) ] ] ] ] ]
+
+2) condition check: E>0
+$./northpole 1 0
+Usage: ./northpole [ N (>= 0) [ E (>= 0) [ seed (> 0) [ C (> 0) [ D (> 0) ] ] ] ] ]
+
+3) condition check: C >= 0
+./northpole 1 1 1003 1 -> generates valid output
+./northpole 1 1 1003 0 -> generates valud output
+./northpole 1 1 1003 -1
+Usage: ./northpole [ N (>= 0) [ E (>= 0) [ seed (> 0) [ C (> 0) [ D (> 0) ] ] ] ] ]
+
+4) condition check: D >= 0
+$ ./northpole 1 1 1003 0 -1
+Usage: ./northpole [ N (>= 0) [ E (>= 0) [ seed (> 0) [ C (> 0) [ D (> 0) ] ] ] ] ]
+
+5) Condition: non number
+$ ./northpole derp
+Usage: ./northpole [ N (>= 0) [ E (>= 0) [ seed (> 0) [ C (> 0) [ D (> 0) ] ] ] ] ]
+
+6) Condition: invalid number of arguments
+$ ./northpole 1 5 1003 1 1 1
+Usage: ./northpole [ N (>= 0) [ E (>= 0) [ seed (> 0) [ C (> 0) [ D (> 0) ] ] ] ] ]
+
+7) using defaults values:
+/northpole
+Sa	E1	E2	E3	R4	R5	R6	R7	R8	
+--	--	--	--	--	--	--	--	--	
+	S	S		S				
+	W	W		V				
+				I				
+S	H		S	B 1		S		S
+	B 1	H				V	S	
+		B 2			S	I		
+						B 2		V
+								I
+N			W				V	B 3
+B			H		V			
+U			B 3				I	
+A								
+C	U 3							
+	C	U 2						
+		C	U 1		I			
+B 2	B 1	B 3	C		B 5		B 4	
+	U 3		c					
+	c							
+U 2	W		W					
+c		U 1	H					
+	H	c	B 1					
+N	B 2	W						
+A								
+D				U 5				
+				D		U 4		
+						D		U 3
+		H					U 2	D
+					U 1		D	
+B 1		B 3		B 2	D	B 4	B 3	
+U 5					B 5			d
+d				U 4				V
+				d				
+				V			U 3	
+N						U 2	d	
+						d		
+				I	U 1	V		
+A					d		V	
+C			U 3		V			I
+	U 2		C			I	I	
+	C	U 1						
+B 2		C	B 1	B 1	I	B 3	B 4	B 2
+	c	B 3	U 3		B 5			
+U 2			c					
+c								
+N	W	U 1	W					
+A		c						
+D				U 5				
+	H		H	D				U 4
+		W				U 3		D
+						D	U 2	
+		H			U 1		D	
+	B 2	B 3	B 1	B 1	D	B 2		
+B 5					B 3		B 4	d
+				U 5				V
+				d		U 4		I
+					U 3	d		
+					d	V	U 2	
+U 1				V			d	
+d								
+N				I	V		V	B 1
+A								
+C			U 3			I		
+	U 2		C		I		I	
+	C	U 1						
+B 1		C		B 2	B 5	B 3	B 4	
+U 3	B 3	B 2	c					
+c		U 2						
+	U 1	c						
+	c							
+...	...	...	F	...	...	...	...	...
+N								
+...	...	F	...	...	...	...	...	...
+...	F	...	...	...	...	...	...	...
+A								
+D								U 5
+				U 4				D
+				D		U 3		
+						D	U 2	
+					U 1		D	
+B 1				B 2	D	B 5	B 4	B 3
+					d			
+...	...	...	...	...	F	...	...	...
+U 5								
+d								
+N				U 4				
+				d				
+...	...	...	...	F	...	...	...	...
+								U 3
+								d
+...	...	...	...	...	...	...	...	F
+							U 2	
+							d	
+...	...	...	...	...	...	...	F	...
+						U 1		
+						d		
+...	...	...	...	...	...	F	...	...
+A								
+F	...	...	...	...	...	...	...	...
+Workshop closed
+
+no deadlocks
+followed the code, blocking and unblocking of elves and reindeer are in correct order.
+
+8) ./northpole
+outputs were different with good variance => pid working
+
+
+9) using reindeer bound and large values
+./northpole 31 51 1003 231 81
+(output too large to insert in test documentation)
+no deadlocks
+last 20 lines match, top 20 match
+bound is working (inserted cerr into code to test when bounds are accessed)
+
+10) using given values: northpole 1 5 1003 1 1
+
+./northpole 1 5 1003 1 1
+Sa	E1	E2	E3	E4	E5	R6	R7	R8	R9	R10	
+--	--	--	--	--	--	--	--	--	--	--	
+S							S			
+N							V			
+B		S		S						
+	S			W						
+	W	W				S	I			S
+							B 1			V
+										I
+		H								B 2
+		B 1		H						
+	H			B 2				S		
+	B 3		S							
+U			W			V				
+A										
+C		U 3	H			I		V		
+		C		U 2	S				S	
+	U 1			C					V	
+B 1	C	B 2	B 1	B 3	W	B 3		I	I	
+U 3	c				H			B 4	B 5	
+c		U 2								
+N		c		U 1						
+				c	B 2					
+...	F	...	...	...	...	...	...	...	...	...
+...	...	F	...	...	...	...	...	...	...	...
+A										
+D							U 5			
+							D			U 4
+						U 3				D
+						D		U 2		
+								D	U 1	
+									D	
+...	...	...	...	F	...	...	...	...	...	...
+			U 2							
+			X		U 1					
+B 3					X		B 1	B 2	B 4	B 5
+...	...	...	F	...	...	...	...	...	...	...
+						d				
+...	...	...	...	...	...	F	...	...	...	...
+							U 5			
+							d			
+...	...	...	...	...	...	...	F	...	...	...
+								U 4		
+								d		
+...	...	...	...	...	...	...	...	F	...	...
+U 3										
+d									U 2	
+									d	
+...	...	...	...	...	...	...	...	...	F	...
+N										U 1
+										d
+...	...	...	...	...	...	...	...	...	...	F
+...	...	...	...	...	F	...	...	...	...	...
+A										
+F	...	...	...	...	...	...	...	...	...	...
+Workshop closed
+
+output matches given output in assignment
+
+11.
+given elves less tehn group, elves should fail, without consultation
+$ ./northpole 1 2 1003 1 1 
+Sa	E1	E2	R3	R4	R5	R6	R7	
+--	--	--	--	--	--	--	--	
+S							S
+N							
+B							V
+							I
+	S	S		S			B 1
+		W					
+		H					
+		X					
+...	...	F	...	...	...	...	...
+				V			
+				I			
+				B 2		S	
+	W		S			V	
+			V				
+			I				
+			B 3		S	I	
+	H					B 4	
+	X						
+...	F	...	...	...	...	...	...
+U							
+B					V		
+					I		
+U					B 5		
+A							
+D							U 5
+				U 4			D
+			U 3	D			
+			D			U 2	
+					U 1	D	
+B 5			B 4	B 2	D	B 3	B 1
+					d		
+...	...	...	...	...	F	...	...
+							U 5
+							d
+...	...	...	...	...	...	...	F
+				U 4			
+				d			
+...	...	...	...	F	...	...	...
+						U 3	
+						d	
+...	...	...	...	...	...	F	...
+			U 2				
+			d				
+...	...	...	F	...	...	...	...
+U 1							
+d							
+N							
+A							
+F	...	...	...	...	...	...	...
+Workshop closed
+
+

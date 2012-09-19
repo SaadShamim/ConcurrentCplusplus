@@ -1,0 +1,77 @@
+#include "station.h"
+#include <uC++.h>
+#include <iostream>
+#include <fstream>
+#include <sstream>
+using namespace std;					// direct access to std
+#include <cstdlib>					// exit
+#include "PRNG.h"
+#include <vector>
+
+bool convert( int &val, char *buffer ) {		// convert C string to integer
+    std::stringstream ss( buffer );			// connect stream and buffer
+    ss >> dec >> val;					// convert integer from buffer
+    return ! ss.fail() &&				// conversion successful ?
+	// characters after conversion all blank ?
+	string( buffer ).find_first_not_of( " ", ss.tellg() ) == string::npos;
+} // convert
+
+enum { sizeDeflt = 20, codeDeflt = 5 };			// global defaults
+
+void usage( char *argv[] ) {
+    cerr << "Usage: " << argv[0]
+	 << " [ size (>= 0 : " << sizeDeflt
+	 << ") [ code (>= 0 : " << codeDeflt
+	 << ") [ input-file [ output-file ] ] ] ]" << endl;
+    exit( EXIT_FAILURE );				// TERMINATE
+} // usage
+
+PRNG myPrng;
+vector<Station *> stationsCreated;     // global variable, active stations
+
+void uMain::main() {
+	int size = sizeDeflt, code = codeDeflt;		// default value
+	int S;
+	int F = 15;
+
+	switch ( argc ) {
+		case 4:
+			if ( ! convert( code, argv[3] ) || code < 0 ) {	// invalid integer ?
+				usage( argv );
+			}
+			myPrng.seed(code);
+		case 3:
+			if ( ! convert( code, argv[2] ) || code < 1 ) {	// invalid integer ?
+				usage( argv );
+			}
+			F = code;
+		case 2:
+			if ( ! convert( size, argv[1] ) || size < 1 ) {	// invalid integer ?
+				usage( argv );
+			} 
+			S = size;
+			break;
+		default:						// wrong number of options
+			usage( argv );
+	}
+	
+	for(int i=0; i<S; i++){
+		stationsCreated.push_back(new Station(i,F));
+	}
+	for(int i=stationsCreated.size()-2; i>=0; i--){
+		stationsCreated[i]->start(stationsCreated[i+1]);
+	}
+	
+	stationsCreated[stationsCreated.size()-1]->start(stationsCreated[0]);
+	Station::Frame tempFrame;
+	
+	tempFrame.type = Station::Frame::TOKEN;
+	tempFrame.value = 0;
+	tempFrame.srcId = 0; 
+	tempFrame.dstId = 0;
+
+	Station::coordinator = stationsCreated[0];
+	stationsCreated[0]->transmit(tempFrame);
+	delete Station::coordinator;
+	
+} // uMain::main

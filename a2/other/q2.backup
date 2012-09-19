@@ -1,0 +1,139 @@
+#include <uC++.h>
+#include <iostream>
+#include <fstream>
+#include <sstream>
+using namespace std;					// direct access to std
+#include <cstdlib>					// exit
+#include <cmath>
+#include "q2quicksort.h"
+
+bool convert( int &val, char *buffer ) {		// convert C string to integer
+    std::stringstream ss( buffer );			// connect stream and buffer
+    ss >> dec >> val;					// convert integer from buffer
+    return ! ss.fail() &&				// conversion successful ?
+	// characters after conversion all blank ?
+	string( buffer ).find_first_not_of( " ", ss.tellg() ) == string::npos;
+} // convert
+
+enum { sizeDeflt = 20, codeDeflt = 5 };			// global defaults
+
+void usage( char *argv[] ) {
+    cerr << "Usage: " << argv[0]
+	 << " [ size (>= 0 : " << sizeDeflt
+	 << ") [ code (>= 0 : " << codeDeflt
+	 << ") [ input-file [ output-file || -depth ] ] ] ]" << endl;
+    exit( EXIT_FAILURE );				// TERMINATE
+} // usage
+
+void uMain::main() {
+	
+	int code = codeDeflt;		// default value
+    
+    TYPE *a;
+    int arraySize;
+    unsigned int depth=1;
+    bool depthAvailable;
+    
+    
+    istream *infile = &cin;				// default value
+    ostream *outfile = &cout;				// default value
+
+	switch ( argc ) {
+		case 3:
+			if(argv[2][0] == '-'){
+							
+				if ( ! convert( code, argv[2]+1 ) || code < 0 ) {	// invalid integer ?
+					usage( argv );	
+				} 		
+			
+				depth = code;
+				depthAvailable = true;
+				
+			}else{
+				try {
+					outfile = new ofstream( argv[2] );
+				} catch( uFile::Failure ) {			// open failed ?
+					cerr << "Error! Could not open output file \"" << argv[2] << "\"" << endl;
+					usage( argv );
+				}		
+
+			}
+				//arraySize = (int*) malloc ();
+		case 2:
+			try {
+				infile = new ifstream( argv[1] );
+			} catch( uFile::Failure ) {
+				cerr << "Error! Could not open input file \"" << argv[2] << "\"" << endl;
+				usage( argv );
+				
+			} // try
+			break;
+		default:						// wrong number of options
+			usage( argv );
+			
+	 } // switch
+
+	uProcessor processors[ depth - 1 ]__attribute__(( unused )); // use “depth” kernel threads
+	
+	
+	for(;;){
+		*infile >> arraySize;					// read arraySize
+		
+		if ( infile->fail()) break;		// failed ?		
+			a = (TYPE *) malloc(sizeof(TYPE) * arraySize);
+		if (a == NULL) {
+			cerr << "Out of memory" << endl;
+			exit(1);
+		}
+		
+		TYPE blah;
+		
+		if(!depthAvailable){
+			for (int i = 0; i < arraySize; i++) {
+				if(i!=0 && i%25==0){
+					if(!depthAvailable)
+					*outfile << endl << " " << " ";
+				}
+				
+				*infile >> blah;
+				
+				if(!depthAvailable)
+				*outfile << blah << " ";			
+				a[i] = blah;
+			}
+		}else{
+			int val = arraySize;
+			for(int i= 0; i < arraySize; i++, val--){
+				a[i] = val;
+			}
+		}
+		
+		if(!depthAvailable)
+			*outfile << endl;
+			
+		{
+			QuickSort<TYPE> q1(a,0,arraySize-1, log2(depth));
+		}
+		
+		
+			for(int i = 0; i < arraySize; i++){
+				if(i!=0 && i%25==0){
+					if(!depthAvailable)
+						*outfile << endl << " " << " ";
+				}
+				if(!depthAvailable)
+				*outfile << a[i] << " ";	
+			} 
+			
+		if(!depthAvailable)
+		 *outfile << endl << endl;
+		
+		free(a);								// dealocate memory	
+		
+	}
+	
+	if ( infile != &cin ) delete infile;		// close file, do not delete cin!
+    if ( outfile != &cout ) delete outfile;		// close file, do not delete cout!
+  
+} // uMain::main
+

@@ -1,0 +1,4 @@
+this is an example of a deadlock because the angles can't move if they are being watched
+but they end up in a state where their looking at each other, meaning none can move because they are being watched by themselves
+and they can't stop watching each other since they can't move (can't move because their being watched)
+=> deadlock, their stuck in a state they can't escape from.
