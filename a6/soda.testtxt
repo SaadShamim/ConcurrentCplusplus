@@ -1,0 +1,205 @@
+ TEST 1
+ ===============================================
+ This test is to check correct error notification on errors. We first try
+ accessing a config file that is not readable, then one that does not exist. In both
+ cases, an error should be printed to screen.
+ The following is a scriptfixed log of the test
+
+	 1  Script started on Mon 02 Apr 2012 04:16:13 PM EDT
+     2  2%>linux024:~/cs343/assn6> chmod -r soda.config
+     3  2%>linux024:~/cs343/assn6> ./soda
+     4  Error: could not open input file "soda.config"
+     5  2%>linux024:~/cs343/assn6> ./soda_64 
+     6  Error: could not open input file "soda.config"
+     7  2%>linux024:~/cs343/assn6> ./soda fileNotExist
+     8  Error: could not open input file "fileNotExist"
+     9  2%>linux024:~/cs343/assn6> ./soda_64 fileNotExist
+    10  Error: could not open input file "fileNotExist"
+    11  2%>linux024:~/cs343/assn6> exit
+    12  exit
+    13  
+    14  Script done on Mon 02 Apr 2012 04:16:41 PM EDT
+
+As shown in the test script above, the program works exactly as expected
+
+
+Test 2
+===============================================
+This test tests invalid seed values for the random number generator.
+The following is the scriptfixed log of the test:
+
+     1  Script started on Mon 02 Apr 2012 04:23:27 PM EDT
+     2  2%>linux024:~/cs343/assn6> ./soda soda.config 0
+     3  Usage: ./soda [config-file [ random-seed > 0 ] ] 
+     4  2%>linux024:~/cs343/assn6> ./soda soda.config -10
+     5  Usage: ./soda [config-file [ random-seed > 0 ] ] 
+     6  2%>linux024:~/cs343/assn6> ./soda_64 soda.config -10
+     7  Usage: ./soda_64 [ config-file [ random-seed (> 0) ] ]
+     8  2%>linux024:~/cs343/assn6> exit
+     9  exit
+    10  
+    11  Script done on Mon 02 Apr 2012 04:23:44 PM EDT
+
+As shown in the script above, our program correctly parses for invalid seed values
+and prints an appropriate usag message.
+
+
+Test 3
+===============================================
+This tests reproducability of the output for short programs using commons seeds
+The following is the scriptfixed log of the output
+
+     1  Script started on Mon 02 Apr 2012 06:11:57 PM EDT
+     2  2%>linux024:~/cs343/assn6> ./soda soda.config 10 > commonSeed.log
+     3  2%>linux024:~/cs343/assn6> ./soda soda.config 10 >commonSeed2.log
+     4  2%>linux024:~/cs343/assn6> diff commonSeed.log commonSeed2.log
+     5  2%>linux024:~/cs343/assn6> exit
+     6  exit
+     7  
+     8  Script done on Mon 02 Apr 2012 06:12:21 PM EDT
+
+As demonstrated in the diff command in the script log above, the output was indeed identical for
+common seed values.
+
+
+Test 4
+===============================================
+This test test standard running of the program in two situations. It is a very comprehensive test
+because it demonstrates that the program follows all of the rules of the game. We use two values for parental
+delay to specifically demonstrate different delays in the program.
+The cases are a very short parental delay of 2 vs. a longer delay of 5. It is expected in both cases that output
+should follow the rules of the program and that the Couriers should block for a longer
+amount of time in the latter case because it must wait longer for the bank account to have
+sufficient funds.
+The following is some excerpts from the script-fix log of the test:
+
+     1  Script started on Mon 02 Apr 2012 06:54:06 PM EDT
+     2  2%>linux024:~/cs343/assn6> ./soda shortDelay.config 
+     3  Parent  WATOff  Names   Truck   Plant   Stud0   Stud1   Stud2   Stud3   Mach0   Mach1   Mach2   Cour0   Cour1   Cour2
+     4  ******  ******  ******  ******  ******  ******  ******  ******  ******  ******  ******  ******  ******  ******  ******
+     5  S       S       S                                                       S1                      S       S       S
+     6  D1,2            R0                                                              S1
+     7  D3,2            R1                                                                      S1
+     8  D1,3            R2
+     9  D0,3    C0,5    N0,0    S       S       S3,1
+    10  D0,1    C1,5    N1,1                    V0      S3,3                                            t0,5
+    11  D0,1                            G15             V1                                              T0,5    t1,5
+    12  D2,3            N0,1    P15             V1                                                              T1,5
+    13          C2,5            d0,15                           S2,7
+    14          W                       P                                                                               t2,5
+    15  D0,1    W       N2,2                                    V2              r
+    16          C3,5            D0,7                                    S1,2    R
+    17                          d1,7                                                    r
+    18  D0,3            N1,2    U1,2                    V2                              R               t3,5
+    19                          D1,1
+    20                          d2,1                                                            r
+    21  D1,2            N3,0    U2,7    G15                             V0                      R
+    22  D2,2                    D2,0            B4      B4                              B3,1    B3,0                    T2,5
+    23  ...     ...     ...     ...     ...     F       ...     ...     ...     ...     ...     ...     ...     ...     ...
+    24  D2,1    W       N2,0                                    V0
+    25  D0,3            N1,0                            V0
+    26  D3,3    C3,5                            L                                                       T3,5
+    27  D3,3                    P15                                                                             t3,5
+    28  D2,1                    d0,15   P                                       r
+    29                          D0,15                                           R
+    30  D1,2                    d1,15                   B3                      B3,1    r
+    31                          D1,12                                                   R
+    32  D2,1                    d2,12   G11                     B4              B2,1            r
+    33  D3,2                    D2,4                    B2                      B3,0            R               T3,5
+    34  ...     ...     ...     ...     ...     ...     F       ...     ...     ...     ...     ...     ...     ...     ...
+    35  D2,2    W                                                       B4      B1,1
+
+
+    93  2%>linux024:~/cs343/assn6> ./soda mediumDelay.config 
+    94  Parent  WATOff  Names   Truck   Plant   Stud0   Stud1   Stud2   Stud3   Mach0   Mach1   Mach2   Cour0   Cour1   Cour2
+    95  ******  ******  ******  ******  ******  ******  ******  ******  ******  ******  ******  ******  ******  ******  ******
+    96  S       S       S                                                       S1                      S       S       S
+    97                  R0                                                              S1
+    98                  R1                                                                      S1
+    99          C0,5    R2      S       S       S2,5
+   100          C1,5    N0,0                    V0      S3,9                                            t0,5
+   101  D0,1            N1,1    P20     G20             V1                                                      t1,5
+   102          C2,5    N2,2    d0,20                           S2,8            r
+   103                          D0,12   P                       V2              R                                       t2,5
+   104                          d1,12                                                   r
+   105          C3,5    N3,0    U1,1                                    S2,1
+   106                          D1,5                                    V0              R
+   107                          d2,5                                                            r
+   108                          U2,3    G18                                                     R
+   109                          D2,0
+   110                          P18
+   111  D3,2                    d0,18   P                                       r
+   112                          D0,18                                           R
+   113                          d1,18                                                   r
+   114                          D1,17                                                   R
+   115                          d2,17   G12                                                     r
+   116                          D2,14                                                           R
+   117                          P12
+   118  D0,3                    d0,12   P                                       r
+   119                          D0,12                                           R
+   120                          d1,12                                                   r
+   121                          D1,12                                                   R
+   122                          d2,12   G9                                                      r
+   123  D1,1                    D2,12                                                           R
+   124                          P9
+   125                          d0,9    P                                       r
+   126                          D0,9                                            R
+   127                          d1,9                                                    r
+   128                          D1,9                                                    R
+   129                          d2,9    G5                                                      r
+   130  D2,3                    D2,9                                                            R
+   131                          P5
+   132                          d0,5    P                                       r
+   133                          D0,5                                            R
+   134                          d1,5                                                    r
+   135                          D1,5                                                    R
+   136                          d2,5    G9                                                      r
+   137  D1,2                    D2,5                                                            R
+   138                          P9
+   139                          d0,9    P                                       r
+   140                          D0,9                                            R
+   141  D1,1                    d1,9                                                    r
+   142                          D1,9                                                    R
+   143                          d2,9    G12                                                     r
+   144                          D2,9                                                            R
+   145                          P12
+   146                          d0,12   P                                       r
+   147                          D0,12                                           R
+   148  D2,1                    d1,12                                                   r
+   149                          D1,12                                                   R
+   150                          d2,12   G9                                                      r
+   151                          D2,12                                                           R
+   152                          P9
+   153                          d0,9    P                                       r
+   154                          D0,9                                            R
+   155                          d1,9                                                    r
+   156                          D1,9                                                    R
+   157  D1,2                    d2,9    G11                                                     r
+   158          W               D2,9                    B4                              B3,1    R               T1,5
+   159                          P11                     B3                              B3,0                    t3,5
+
+The program behaved exactly as expected. It read the config file properly. The rules of the game were followed
+exactly as specified.
+
+
+Test 5
+===============================================
+This is a stress test. The width of the output is far too wide to show here and be useful. Also, the output is
+far too long to be useful to show here. This is because we use a large number of students, large number of purchases, etc.
+The config file we used was as follows
+
+
+	SodaCost 12 # Manufacturer Suggested Retail Price (MSRP) per bottle
+	NumStudents 40 # number of students to create
+	MaxPurchases 200 # maximum number of bottles a student purchases
+	NumVendingMachines 150 # number of vending machines
+	MaxStockPerFlavour 20 # maximum number of bottles of each ﬂavour in a vending machine
+	MaxShippedPerFlavour 1000 # maximum number of bottles of each ﬂavour generated by the bottling
+							# plant per production run
+	TimeBetweenShipments 8 # length of time between shipment pickup
+	ParentalDelay 15 # length of time between new deposits of funds
+	NumCouriers 8 # maximum number of couriers in the pool
+
+Inspecting the output of the file reveals 813,377 lines of output and that the program terminated successfully. 
+Inspection of individual places within the file demonstrate that the program works as expected. The width of the 
+output is too wide to show the output here.
